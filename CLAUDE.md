@@ -7,7 +7,7 @@ A clean, minimal architecture firm website demo with full-screen vertical slide 
 | Layer | Technology | Notes |
 |-------|-----------|-------|
 | Framework | Astro | Static site generator |
-| Slides | Swiper.js | Vertical slides, parallax, mousewheel nav |
+| Scroll | GSAP ScrollTrigger + Lenis | Split-scroll animations, smooth scrolling |
 | Animations | GSAP | Slide entrance micro-animations |
 | Fonts | Bodoni Moda (display) + Karla (body) | Google Fonts |
 | Hosting | Vercel | Auto-deploys from GitHub |
@@ -29,12 +29,13 @@ public/
 
 ## Sections (Swiper Slides)
 
-- [x] Hero — "ATELIER" with CSS architectural line drawing, parallax
-- [x] Philosophy — Quote + geometric composition, two-column layout
-- [x] Projects — 4 project cards with gradient thumbnails, hover states
-- [x] Process — CONCEPT → DESIGN → BUILD with CSS icons and connectors
-- [x] Awards — Editorial-style award list, 7 entries
-- [x] Contact — Studio info, address, clean footer
+- [x] Hero — "ATELIER" with CSS grid lines, fade on scroll
+- [x] Philosophy (vertical split) — left up / right down
+- [x] Meridian House (horizontal split) — top left / bottom right
+- [x] Terra Office Tower (reversed vertical split) — right up / left down
+- [x] Process (reversed horizontal split) — opposite horizontal movement
+- [x] Awards (vertical split) — left up / right down
+- [x] Contact — Dark section, full width
 
 ## Key Decisions
 

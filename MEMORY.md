@@ -2,18 +2,18 @@
 
 ## Last Session
 - **Date:** 2026-03-18
-- **Accomplished:** Built full architecture studio demo from scratch — 6 Swiper slides with parallax, GSAP animations, Bodoni Moda typography, warm stone palette. Pushed to GitHub and deployed to Vercel.
-- **Where we left off:** Site is live. Ready for refinement or to move on to next demo.
+- **Accomplished:** Built architecture studio demo. Iterated from Swiper slides → split-scroll with mixed vertical and horizontal splits. Pushed to GitHub (AlejandroA02/demo-arch-studio). Pending Vercel deploy.
+- **Where we left off:** Site is polished and pushed. Ready for Vercel import.
 
 ## Pending Items
-- [ ] Mobile hamburger menu (nav links hidden on small screens)
-- [ ] Optional: add more hover micro-interactions
+- [ ] Import repo on Vercel for auto-deploy
+- [ ] Optional: mobile hamburger menu
 
 ## Active Decisions & Context
-- This is part of a series of demo sites (naming: `demo-*`), each showcasing different web capabilities
-- Architecture theme — clean, minimal, Swiss-precision aesthetic
-- No real content — all placeholder for demonstration purposes
+- Part of a series of demo sites (naming: `demo-*`)
+- Architecture theme — clean, minimal, warm stone palette
+- User specifically wanted mixed split directions (vertical + horizontal) with smooth dismantling/constructing feel
+- Swiper was dropped in favor of GSAP ScrollTrigger for more flexible split-scroll behavior
 
 ## Known Gotchas
-- Swiper CSS import produces a build warning but doesn't affect output
-- Swiper `loop: true` was changed to `loop: false` because looping with parallax can cause glitches
+- Lenis duration set to 1.8 with scrub: 2 for extra smoothness — user confirmed this feels right
