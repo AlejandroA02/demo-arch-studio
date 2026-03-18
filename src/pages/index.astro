@@ -20,7 +20,7 @@
       <div class="nav-meta">Architecture & Interior Design</div>
     </nav>
 
-    <!-- ══════ 1. HERO (full width) ══════ -->
+    <!-- ══════ 1. HERO ══════ -->
     <section class="hero">
       <div class="hero-grid-lines">
         <div class="hgl hgl-v1"></div>
@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <!-- ══════ 2. VERTICAL SPLIT — left up / right down ══════ -->
+    <!-- ══════ 2. VERTICAL SPLIT — Philosophy + Luxury Residence Floor Plan ══════ -->
     <section class="vsplit" data-split="vertical">
       <div class="vsplit-left">
         <div class="panel-label">
@@ -54,30 +54,676 @@
         <p class="panel-body">We believe in the quiet power of considered space. Every line we draw serves the dialogue between structure and the human experience within it.</p>
       </div>
       <div class="vsplit-right">
-        <div class="visual-block block-facade">
-          <div class="facade-window"></div>
-          <div class="facade-window"></div>
-          <div class="facade-window"></div>
-          <div class="facade-window"></div>
-          <div class="facade-window"></div>
-          <div class="facade-window"></div>
-          <div class="facade-beam"></div>
-          <div class="facade-beam facade-beam-2"></div>
+        <div class="blueprint-container">
+          <svg class="blueprint" viewBox="0 0 500 420" data-blueprint>
+            <!-- ===== EXTERIOR WALLS (thick, 6px) ===== -->
+            <rect x="40" y="30" width="420" height="340" class="bp-line" fill="none" stroke-width="6"/>
+            <!-- ===== INTERIOR WALLS (4px thick as rects) ===== -->
+            <!-- Living/Kitchen divider (vertical) -->
+            <rect x="258" y="30" width="4" height="190" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Living/Dining-Bedroom divider (horizontal) -->
+            <rect x="40" y="170" width="222" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master suite wall (horizontal) -->
+            <rect x="258" y="224" width="202" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Bathroom wall (vertical) -->
+            <rect x="368" y="224" width="4" height="146" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Bedroom 2 wall (vertical) -->
+            <rect x="158" y="170" width="4" height="200" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Hallway wall (horizontal) -->
+            <rect x="158" y="268" width="104" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Closet wall -->
+            <rect x="262" y="228" width="50" height="4" class="bp-line" fill="none" stroke-width="0.8"/>
+            <rect x="308" y="228" width="4" height="36" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Laundry/utility room -->
+            <rect x="158" y="332" width="104" height="4" class="bp-line" fill="none" stroke-width="0.8"/>
+
+            <!-- ===== WINDOWS (gaps in walls + glass lines) ===== -->
+            <!-- N wall: living windows -->
+            <line x1="65" y1="28" x2="130" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="65" y1="33" x2="130" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- N wall: living window 2 -->
+            <line x1="155" y1="28" x2="220" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="155" y1="33" x2="220" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- N wall: kitchen window -->
+            <line x1="310" y1="28" x2="390" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="310" y1="33" x2="390" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall: kitchen window -->
+            <line x1="458" y1="60" x2="458" y2="140" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="60" x2="462" y2="140" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall: master window -->
+            <line x1="458" y1="260" x2="458" y2="340" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="260" x2="462" y2="340" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: bedroom 2 window -->
+            <line x1="60" y1="368" x2="135" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="60" y1="372" x2="135" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: bathroom window -->
+            <line x1="390" y1="368" x2="440" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="390" y1="372" x2="440" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall: living window -->
+            <line x1="38" y1="60" x2="38" y2="140" class="bp-accent-line" stroke-width="2"/>
+            <line x1="42" y1="60" x2="42" y2="140" class="bp-accent-line" stroke-width="0.5"/>
+
+            <!-- ===== DOOR SWINGS ===== -->
+            <!-- Living to dining -->
+            <path d="M 258 170 Q 238 170 238 190" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="258" y1="170" x2="238" y2="170" class="bp-line-thin"/>
+            <!-- Master entry -->
+            <path d="M 262 268 Q 282 268 282 248" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="262" y1="268" x2="262" y2="248" class="bp-line-thin"/>
+            <!-- Bathroom -->
+            <path d="M 368 300 Q 348 300 348 320" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="368" y1="300" x2="348" y2="300" class="bp-line-thin"/>
+            <!-- Bedroom 2 -->
+            <path d="M 158 305 Q 178 305 178 285" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="158" y1="305" x2="158" y2="285" class="bp-line-thin"/>
+            <!-- Hallway to utility -->
+            <path d="M 200 332 Q 200 312 220 312" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="200" y1="332" x2="220" y2="332" class="bp-line-thin"/>
+            <!-- Closet -->
+            <path d="M 308 260 Q 290 260 290 240" class="bp-accent-line" fill="none" stroke-width="0.6"/>
+            <!-- Front door (double) -->
+            <path d="M 40 280 Q 60 280 60 300" class="bp-accent-line" fill="none" stroke-width="1"/>
+            <line x1="40" y1="280" x2="40" y2="300" class="bp-line-thin"/>
+            <path d="M 40 300 Q 60 300 60 320" class="bp-accent-line" fill="none" stroke-width="1"/>
+
+            <!-- ===== LIVING ROOM FURNITURE ===== -->
+            <!-- L-shaped sofa -->
+            <rect x="58" y="52" width="85" height="28" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="58" y="52" width="28" height="65" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Sofa cushion lines -->
+            <line x1="86" y1="55" x2="86" y2="77" class="bp-line-thin"/>
+            <line x1="110" y1="55" x2="110" y2="77" class="bp-line-thin"/>
+            <!-- Coffee table -->
+            <rect x="100" y="68" width="38" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Side table -->
+            <circle cx="152" cy="65" r="10" class="bp-line-thin" fill="none"/>
+            <!-- TV unit on wall -->
+            <rect x="180" y="50" width="6" height="60" class="bp-line-thin" fill="none"/>
+            <!-- Rug -->
+            <rect x="55" y="45" width="130" height="80" class="bp-dim" fill="none" rx="3" stroke-dasharray="4 3"/>
+            <!-- Floor lamp -->
+            <circle cx="55" cy="125" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="55" cy="125" r="1.5" class="bp-dot"/>
+
+            <!-- ===== DINING ===== -->
+            <rect x="65" y="192" width="65" height="35" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chairs top -->
+            <rect x="72" y="183" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="90" y="183" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="108" y="183" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chairs bottom -->
+            <rect x="72" y="230" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="90" y="230" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="108" y="230" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chairs sides -->
+            <rect x="56" y="200" width="6" height="12" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="133" y="200" width="6" height="12" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Pendant -->
+            <circle cx="97" cy="210" r="12" class="bp-dim" fill="none" stroke-dasharray="2 2"/>
+
+            <!-- ===== KITCHEN ===== -->
+            <!-- Counter L-shape -->
+            <rect x="266" y="38" width="80" height="14" class="bp-line" fill="none" stroke-width="0.8"/>
+            <rect x="266" y="38" width="14" height="95" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Stove (4 burners) -->
+            <rect x="268" y="70" width="12" height="18" class="bp-line-thin" fill="none"/>
+            <circle cx="272" cy="75" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="278" cy="75" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="272" cy="83" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="278" cy="83" r="2.5" class="bp-line-thin" fill="none"/>
+            <!-- Sink (double) -->
+            <rect x="295" y="40" width="20" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="305" y1="40" x2="305" y2="52" class="bp-line-thin"/>
+            <!-- Dishwasher -->
+            <rect x="320" y="40" width="14" height="12" class="bp-line-thin" fill="none"/>
+            <line x1="324" y1="44" x2="330" y2="44" class="bp-line-thin"/>
+            <line x1="324" y1="48" x2="330" y2="48" class="bp-line-thin"/>
+            <!-- Refrigerator -->
+            <rect x="340" y="36" width="22" height="28" class="bp-line" fill="none" stroke-width="0.8"/>
+            <line x1="340" y1="50" x2="362" y2="50" class="bp-line-thin"/>
+            <!-- Island -->
+            <rect x="300" y="80" width="55" height="22" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Bar stools -->
+            <circle cx="310" cy="110" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="325" cy="110" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="340" cy="110" r="5" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== MASTER BEDROOM ===== -->
+            <!-- Bed (queen) -->
+            <rect x="290" y="270" width="60" height="75" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Pillows -->
+            <rect x="295" y="275" width="22" height="12" class="bp-line-thin" fill="none" rx="4"/>
+            <rect x="323" y="275" width="22" height="12" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Headboard line -->
+            <line x1="290" y1="270" x2="350" y2="270" class="bp-line" stroke-width="1.5"/>
+            <!-- Nightstands -->
+            <rect x="275" y="278" width="12" height="12" class="bp-line-thin" fill="none"/>
+            <rect x="353" y="278" width="12" height="12" class="bp-line-thin" fill="none"/>
+            <!-- Dresser -->
+            <rect x="270" y="232" width="55" height="12" class="bp-line-thin" fill="none"/>
+            <!-- Rug -->
+            <rect x="282" y="262" width="76" height="90" class="bp-dim" fill="none" rx="2" stroke-dasharray="3 3"/>
+            <!-- Closet rail -->
+            <line x1="266" y1="238" x2="305" y2="238" class="bp-line-thin" stroke-dasharray="1 2"/>
+            <line x1="266" y1="252" x2="305" y2="252" class="bp-line-thin"/>
+
+            <!-- ===== BATHROOM ===== -->
+            <!-- Bathtub -->
+            <rect x="380" y="240" width="65" height="30" class="bp-line-thin" fill="none" rx="10"/>
+            <rect x="385" y="245" width="55" height="20" class="bp-line-thin" fill="none" rx="7"/>
+            <!-- Toilet -->
+            <rect x="390" y="310" width="16" height="22" class="bp-line-thin" fill="none" rx="5"/>
+            <circle cx="398" cy="305" r="8" class="bp-line-thin" fill="none"/>
+            <!-- Vanity with double sink -->
+            <rect x="420" y="290" width="30" height="50" class="bp-line" fill="none" stroke-width="0.8"/>
+            <circle cx="435" cy="305" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="435" cy="325" r="5" class="bp-line-thin" fill="none"/>
+            <!-- Shower -->
+            <rect x="380" y="340" width="35" height="28" class="bp-line-thin" fill="none"/>
+            <circle cx="395" cy="354" r="4" class="bp-line-thin" fill="none"/>
+            <line x1="380" y1="340" x2="415" y2="368" class="bp-dim"/>
+            <!-- Towel rails -->
+            <line x1="374" y1="330" x2="374" y2="348" class="bp-line-thin"/>
+            <line x1="376" y1="330" x2="376" y2="348" class="bp-line-thin"/>
+
+            <!-- ===== BEDROOM 2 ===== -->
+            <rect x="55" y="290" width="48" height="62" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Pillows -->
+            <rect x="59" y="295" width="18" height="10" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="81" y="295" width="18" height="10" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="55" y1="290" x2="103" y2="290" class="bp-line" stroke-width="1.2"/>
+            <!-- Nightstand -->
+            <rect x="106" y="295" width="10" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Desk -->
+            <rect x="110" y="340" width="35" height="14" class="bp-line-thin" fill="none"/>
+            <!-- Desk chair -->
+            <circle cx="127" cy="362" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Wardrobe -->
+            <rect x="55" y="180" width="40" height="12" class="bp-line-thin" fill="none"/>
+            <line x1="75" y1="180" x2="75" y2="192" class="bp-line-thin"/>
+
+            <!-- ===== UTILITY / LAUNDRY ===== -->
+            <!-- Washer -->
+            <rect x="168" y="342" width="20" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <circle cx="178" cy="352" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Dryer -->
+            <rect x="192" y="342" width="20" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <circle cx="202" cy="352" r="6" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== HALLWAY ===== -->
+            <!-- Console table -->
+            <rect x="166" y="240" width="28" height="6" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== DIMENSION CHAINS — TOP ===== -->
+            <!-- Overall -->
+            <line x1="40" y1="15" x2="460" y2="15" class="bp-dim"/>
+            <line x1="40" y1="11" x2="40" y2="19" class="bp-dim"/>
+            <line x1="460" y1="11" x2="460" y2="19" class="bp-dim"/>
+            <text x="230" y="12" class="bp-text-dim" text-anchor="middle">15.20 m</text>
+            <!-- Segmented -->
+            <line x1="40" y1="22" x2="260" y2="22" class="bp-dim"/>
+            <line x1="40" y1="19" x2="40" y2="25" class="bp-dim"/>
+            <line x1="260" y1="19" x2="260" y2="25" class="bp-dim"/>
+            <text x="150" y="21" class="bp-text-dim" text-anchor="middle">7.92 m</text>
+            <line x1="260" y1="22" x2="460" y2="22" class="bp-dim"/>
+            <line x1="460" y1="19" x2="460" y2="25" class="bp-dim"/>
+            <text x="360" y="21" class="bp-text-dim" text-anchor="middle">7.28 m</text>
+
+            <!-- ===== DIMENSION CHAINS — BOTTOM ===== -->
+            <line x1="40" y1="385" x2="160" y2="385" class="bp-dim"/>
+            <line x1="40" y1="381" x2="40" y2="389" class="bp-dim"/>
+            <line x1="160" y1="381" x2="160" y2="389" class="bp-dim"/>
+            <text x="100" y="392" class="bp-text-dim" text-anchor="middle">4.32 m</text>
+            <line x1="160" y1="385" x2="260" y2="385" class="bp-dim"/>
+            <line x1="260" y1="381" x2="260" y2="389" class="bp-dim"/>
+            <text x="210" y="392" class="bp-text-dim" text-anchor="middle">3.60 m</text>
+            <line x1="260" y1="385" x2="370" y2="385" class="bp-dim"/>
+            <line x1="370" y1="381" x2="370" y2="389" class="bp-dim"/>
+            <text x="315" y="392" class="bp-text-dim" text-anchor="middle">3.96 m</text>
+            <line x1="370" y1="385" x2="460" y2="385" class="bp-dim"/>
+            <line x1="460" y1="381" x2="460" y2="389" class="bp-dim"/>
+            <text x="415" y="392" class="bp-text-dim" text-anchor="middle">3.32 m</text>
+
+            <!-- ===== DIMENSION CHAINS — LEFT ===== -->
+            <line x1="25" y1="30" x2="25" y2="174" class="bp-dim"/>
+            <line x1="21" y1="30" x2="29" y2="30" class="bp-dim"/>
+            <line x1="21" y1="174" x2="29" y2="174" class="bp-dim"/>
+            <text x="18" y="105" class="bp-text-dim" transform="rotate(-90, 18, 105)" text-anchor="middle">5.04 m</text>
+            <line x1="25" y1="174" x2="25" y2="370" class="bp-dim"/>
+            <line x1="21" y1="370" x2="29" y2="370" class="bp-dim"/>
+            <text x="18" y="275" class="bp-text-dim" transform="rotate(-90, 18, 275)" text-anchor="middle">7.08 m</text>
+
+            <!-- ===== DIMENSION CHAINS — RIGHT ===== -->
+            <line x1="475" y1="30" x2="475" y2="228" class="bp-dim"/>
+            <line x1="471" y1="30" x2="479" y2="30" class="bp-dim"/>
+            <line x1="471" y1="228" x2="479" y2="228" class="bp-dim"/>
+            <text x="482" y="130" class="bp-text-dim" transform="rotate(90, 482, 130)" text-anchor="middle">7.12 m</text>
+            <line x1="475" y1="228" x2="475" y2="370" class="bp-dim"/>
+            <line x1="471" y1="370" x2="479" y2="370" class="bp-dim"/>
+            <text x="482" y="300" class="bp-text-dim" transform="rotate(90, 482, 300)" text-anchor="middle">5.08 m</text>
+
+            <!-- ===== INTERIOR DIMENSIONS ===== -->
+            <!-- Living width -->
+            <line x1="46" y1="158" x2="256" y2="158" class="bp-dim"/>
+            <line x1="46" y1="155" x2="46" y2="161" class="bp-dim"/>
+            <line x1="256" y1="155" x2="256" y2="161" class="bp-dim"/>
+            <text x="151" y="155" class="bp-text-dim" text-anchor="middle">7.56 m</text>
+            <!-- Kitchen width -->
+            <line x1="264" y1="158" x2="454" y2="158" class="bp-dim"/>
+            <line x1="264" y1="155" x2="264" y2="161" class="bp-dim"/>
+            <line x1="454" y1="155" x2="454" y2="161" class="bp-dim"/>
+            <text x="359" y="155" class="bp-text-dim" text-anchor="middle">6.86 m</text>
+            <!-- Master width -->
+            <line x1="264" y1="360" x2="366" y2="360" class="bp-dim"/>
+            <line x1="264" y1="357" x2="264" y2="363" class="bp-dim"/>
+            <line x1="366" y1="357" x2="366" y2="363" class="bp-dim"/>
+            <text x="315" y="357" class="bp-text-dim" text-anchor="middle">3.68 m</text>
+            <!-- Bath width -->
+            <line x1="374" y1="360" x2="454" y2="360" class="bp-dim"/>
+            <line x1="374" y1="357" x2="374" y2="363" class="bp-dim"/>
+            <line x1="454" y1="357" x2="454" y2="363" class="bp-dim"/>
+            <text x="414" y="357" class="bp-text-dim" text-anchor="middle">2.90 m</text>
+
+            <!-- ===== ROOM LABELS ===== -->
+            <text x="110" y="100" class="bp-text">Living Room</text>
+            <text x="340" y="100" class="bp-text">Kitchen</text>
+            <text x="85" y="215" class="bp-text">Dining</text>
+            <text x="310" y="310" class="bp-text">Primary Bedroom</text>
+            <text x="410" y="290" class="bp-text">Bathroom</text>
+            <text x="75" y="330" class="bp-text">Bedroom</text>
+            <text x="180" y="285" class="bp-text-dim">Hall</text>
+            <text x="270" y="248" class="bp-text-dim">Closet</text>
+            <text x="175" y="355" class="bp-text-dim">Laundry</text>
+
+            <!-- ===== AREA CALCULATIONS ===== -->
+            <text x="110" y="110" class="bp-text-dim">35.8 m²</text>
+            <text x="340" y="110" class="bp-text-dim">15.6 m²</text>
+            <text x="85" y="225" class="bp-text-dim">13.2 m²</text>
+            <text x="310" y="320" class="bp-text-dim">20.8 m²</text>
+            <text x="410" y="300" class="bp-text-dim">8.0 m²</text>
+            <text x="75" y="340" class="bp-text-dim">14.5 m²</text>
+
+            <!-- ===== GRID REFERENCES ===== -->
+            <text x="40" y="404" class="bp-text-grid">A</text>
+            <text x="160" y="404" class="bp-text-grid">B</text>
+            <text x="260" y="404" class="bp-text-grid">C</text>
+            <text x="370" y="404" class="bp-text-grid">D</text>
+            <text x="460" y="404" class="bp-text-grid">E</text>
+            <text x="490" y="30" class="bp-text-grid">1</text>
+            <text x="490" y="174" class="bp-text-grid">2</text>
+            <text x="490" y="228" class="bp-text-grid">3</text>
+            <text x="490" y="370" class="bp-text-grid">4</text>
+            <!-- Grid dots -->
+            <circle cx="40" cy="30" r="3" class="bp-dot"/>
+            <circle cx="260" cy="30" r="3" class="bp-dot"/>
+            <circle cx="460" cy="30" r="3" class="bp-dot"/>
+            <circle cx="40" cy="370" r="3" class="bp-dot"/>
+            <circle cx="260" cy="370" r="3" class="bp-dot"/>
+            <circle cx="460" cy="370" r="3" class="bp-dot"/>
+
+            <!-- ===== TITLE BLOCK ===== -->
+            <text x="350" y="402" class="bp-text-accent">A-101</text>
+            <text x="390" y="402" class="bp-text-dim">Residence — Floor Plan</text>
+            <text x="46" y="414" class="bp-text-dim">Scale: 1:100 | Total: 128.6 m²</text>
+          </svg>
         </div>
       </div>
       <div class="split-line split-line-v"></div>
     </section>
 
-    <!-- ══════ 3. HORIZONTAL SPLIT — top left / bottom right ══════ -->
+    <!-- ══════ 3. HORIZONTAL SPLIT — L-shaped Villa Plan + Meridian House ══════ -->
     <section class="hsplit" data-split="horizontal">
       <div class="hsplit-top">
-        <div class="visual-block block-section">
-          <div class="section-floor section-floor-1"></div>
-          <div class="section-floor section-floor-2"></div>
-          <div class="section-floor section-floor-3"></div>
-          <div class="section-col section-col-1"></div>
-          <div class="section-col section-col-2"></div>
-          <div class="section-roof"></div>
+        <div class="blueprint-container">
+          <svg class="blueprint" viewBox="0 0 500 420" data-blueprint>
+            <!-- ===== L-SHAPED EXTERIOR WALLS (thick, 6px) ===== -->
+            <!-- Main block: top-left rectangle -->
+            <rect x="40" y="30" width="280" height="180" class="bp-line" fill="none" stroke-width="6"/>
+            <!-- Wing block: bottom-right rectangle overlapping -->
+            <rect x="180" y="150" width="280" height="220" class="bp-line" fill="none" stroke-width="6"/>
+
+            <!-- ===== INTERIOR WALLS (4px rects) ===== -->
+            <!-- Living/Kitchen vertical divider -->
+            <rect x="188" y="30" width="4" height="120" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Bedroom 1/2 horizontal divider (upper left) -->
+            <rect x="40" y="120" width="148" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Bedroom 1/Bed 2 vertical divider -->
+            <rect x="110" y="120" width="4" height="90" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Hallway horizontal wall -->
+            <rect x="180" y="210" width="140" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master suite vertical divider -->
+            <rect x="340" y="150" width="4" height="220" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master bath horizontal -->
+            <rect x="340" y="280" width="120" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Dining/Kitchen lower divider -->
+            <rect x="180" y="300" width="160" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Staircase enclosure -->
+            <rect x="260" y="214" width="4" height="86" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Courtyard wall stub -->
+            <rect x="180" y="150" width="4" height="60" class="bp-line" fill="none" stroke-width="0.8"/>
+
+            <!-- ===== WINDOWS (double lines) ===== -->
+            <!-- N wall: living room windows -->
+            <line x1="65" y1="28" x2="140" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="65" y1="33" x2="140" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- N wall: kitchen window -->
+            <line x1="220" y1="28" x2="290" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="220" y1="33" x2="290" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall upper: kitchen window -->
+            <line x1="318" y1="55" x2="318" y2="130" class="bp-accent-line" stroke-width="2"/>
+            <line x1="322" y1="55" x2="322" y2="130" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall lower: master bedroom -->
+            <line x1="458" y1="180" x2="458" y2="260" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="180" x2="462" y2="260" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall: master bath window -->
+            <line x1="458" y1="300" x2="458" y2="350" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="300" x2="462" y2="350" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: dining window -->
+            <line x1="210" y1="368" x2="290" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="210" y1="372" x2="290" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: bedroom 3 window -->
+            <line x1="360" y1="368" x2="430" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="360" y1="372" x2="430" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall: living -->
+            <line x1="38" y1="55" x2="38" y2="100" class="bp-accent-line" stroke-width="2"/>
+            <line x1="42" y1="55" x2="42" y2="100" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall: bedroom 2 -->
+            <line x1="38" y1="135" x2="38" y2="190" class="bp-accent-line" stroke-width="2"/>
+            <line x1="42" y1="135" x2="42" y2="190" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall of upper block: courtyard windows -->
+            <line x1="60" y1="208" x2="100" y2="208" class="bp-accent-line" stroke-width="2"/>
+            <line x1="60" y1="212" x2="100" y2="212" class="bp-accent-line" stroke-width="0.5"/>
+
+            <!-- ===== DOOR SWINGS ===== -->
+            <!-- Living to Bed 1 -->
+            <path d="M 110 92 Q 90 92 90 112" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="110" y1="92" x2="90" y2="92" class="bp-line-thin"/>
+            <!-- Kitchen to hallway -->
+            <path d="M 220 210 Q 220 230 240 230" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="220" y1="210" x2="220" y2="230" class="bp-line-thin"/>
+            <!-- Master entry -->
+            <path d="M 344 220 Q 364 220 364 200" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="344" y1="220" x2="344" y2="200" class="bp-line-thin"/>
+            <!-- Master bath -->
+            <path d="M 380 280 Q 380 260 400 260" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="380" y1="280" x2="380" y2="260" class="bp-line-thin"/>
+            <!-- Bed 2 -->
+            <path d="M 70 120 Q 70 140 50 140" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="70" y1="120" x2="70" y2="140" class="bp-line-thin"/>
+            <!-- Dining room -->
+            <path d="M 240 300 Q 260 300 260 320" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="240" y1="300" x2="260" y2="300" class="bp-line-thin"/>
+            <!-- Front door (double) -->
+            <path d="M 180 340 Q 200 340 200 360" class="bp-accent-line" fill="none" stroke-width="1"/>
+            <line x1="180" y1="340" x2="180" y2="360" class="bp-line-thin"/>
+            <path d="M 180 360 Q 200 360 200 380" class="bp-accent-line" fill="none" stroke-width="1"/>
+
+            <!-- ===== LIVING ROOM FURNITURE ===== -->
+            <!-- L-shaped sofa -->
+            <rect x="55" y="45" width="80" height="26" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="55" y="45" width="26" height="60" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Cushion lines -->
+            <line x1="81" y1="48" x2="81" y2="68" class="bp-line-thin"/>
+            <line x1="107" y1="48" x2="107" y2="68" class="bp-line-thin"/>
+            <!-- Coffee table -->
+            <rect x="92" y="62" width="35" height="18" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Side table -->
+            <circle cx="140" cy="58" r="8" class="bp-line-thin" fill="none"/>
+            <!-- TV unit -->
+            <rect x="155" y="42" width="6" height="55" class="bp-line-thin" fill="none"/>
+            <!-- Rug -->
+            <rect x="50" y="40" width="120" height="72" class="bp-dim" fill="none" rx="3" stroke-dasharray="4 3"/>
+            <!-- Floor lamp -->
+            <circle cx="52" cy="108" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="52" cy="108" r="1.5" class="bp-dot"/>
+
+            <!-- ===== KITCHEN ===== -->
+            <!-- Counter L-shape -->
+            <rect x="195" y="38" width="100" height="14" class="bp-line" fill="none" stroke-width="0.8"/>
+            <rect x="195" y="38" width="14" height="88" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Stove (4 burners) -->
+            <rect x="197" y="65" width="12" height="20" class="bp-line-thin" fill="none"/>
+            <circle cx="201" cy="71" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="207" cy="71" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="201" cy="80" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="207" cy="80" r="2.5" class="bp-line-thin" fill="none"/>
+            <!-- Sink (double) -->
+            <rect x="225" y="40" width="22" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="236" y1="40" x2="236" y2="52" class="bp-line-thin"/>
+            <!-- Dishwasher -->
+            <rect x="252" y="40" width="16" height="12" class="bp-line-thin" fill="none"/>
+            <line x1="256" y1="44" x2="264" y2="44" class="bp-line-thin"/>
+            <line x1="256" y1="48" x2="264" y2="48" class="bp-line-thin"/>
+            <!-- Refrigerator -->
+            <rect x="275" y="36" width="24" height="28" class="bp-line" fill="none" stroke-width="0.8"/>
+            <line x1="275" y1="50" x2="299" y2="50" class="bp-line-thin"/>
+            <!-- Island -->
+            <rect x="230" y="78" width="55" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Bar stools -->
+            <circle cx="242" cy="106" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="257" cy="106" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="272" cy="106" r="5" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== BEDROOM 1 (upper left) ===== -->
+            <rect x="52" y="132" width="50" height="65" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Pillows -->
+            <rect x="56" y="137" width="18" height="10" class="bp-line-thin" fill="none" rx="4"/>
+            <rect x="80" y="137" width="18" height="10" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Headboard -->
+            <line x1="52" y1="132" x2="102" y2="132" class="bp-line" stroke-width="1.2"/>
+            <!-- Nightstand -->
+            <rect x="105" y="140" width="10" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Wardrobe -->
+            <rect x="120" y="130" width="35" height="12" class="bp-line-thin" fill="none"/>
+            <line x1="137" y1="130" x2="137" y2="142" class="bp-line-thin"/>
+
+            <!-- ===== BEDROOM 2 (lower left of upper block) ===== -->
+            <rect x="52" y="135" width="0" height="0" class="bp-line-thin" fill="none"/>
+            <!-- Bed -->
+            <rect x="120" y="132" width="48" height="60" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="124" y="137" width="16" height="10" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="148" y="137" width="16" height="10" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="120" y1="132" x2="168" y2="132" class="bp-line" stroke-width="1.2"/>
+
+            <!-- ===== COURTYARD ===== -->
+            <rect x="50" y="220" width="120" height="80" class="bp-dim" fill="none" stroke-dasharray="5 3"/>
+            <!-- Plants -->
+            <circle cx="80" cy="250" r="8" class="bp-line-thin" fill="none"/>
+            <circle cx="80" cy="250" r="2" class="bp-dot"/>
+            <circle cx="120" cy="270" r="6" class="bp-line-thin" fill="none"/>
+            <circle cx="120" cy="270" r="2" class="bp-dot"/>
+            <circle cx="100" cy="280" r="10" class="bp-line-thin" fill="none"/>
+            <circle cx="100" cy="280" r="2" class="bp-dot"/>
+
+            <!-- ===== STAIRCASE ===== -->
+            <line x1="265" y1="220" x2="330" y2="220" class="bp-line-thin"/>
+            <line x1="265" y1="228" x2="330" y2="228" class="bp-line-thin"/>
+            <line x1="265" y1="236" x2="330" y2="236" class="bp-line-thin"/>
+            <line x1="265" y1="244" x2="330" y2="244" class="bp-line-thin"/>
+            <line x1="265" y1="252" x2="330" y2="252" class="bp-line-thin"/>
+            <line x1="265" y1="260" x2="330" y2="260" class="bp-line-thin"/>
+            <line x1="265" y1="268" x2="330" y2="268" class="bp-line-thin"/>
+            <line x1="265" y1="276" x2="330" y2="276" class="bp-line-thin"/>
+            <line x1="265" y1="284" x2="330" y2="284" class="bp-line-thin"/>
+            <line x1="265" y1="292" x2="330" y2="292" class="bp-line-thin"/>
+            <line x1="297" y1="220" x2="297" y2="295" class="bp-accent-line"/>
+            <!-- Stair arrow -->
+            <line x1="297" y1="220" x2="297" y2="208" class="bp-accent-line"/>
+            <line x1="294" y1="212" x2="297" y2="206" class="bp-accent-line"/>
+            <line x1="300" y1="212" x2="297" y2="206" class="bp-accent-line"/>
+
+            <!-- ===== DINING ROOM ===== -->
+            <rect x="200" y="320" width="70" height="38" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chairs top -->
+            <rect x="210" y="311" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="228" y="311" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="246" y="311" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chairs bottom -->
+            <rect x="210" y="361" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="228" y="361" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="246" y="361" width="12" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chair sides -->
+            <rect x="192" y="330" width="6" height="12" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="272" y="330" width="6" height="12" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Pendant light -->
+            <circle cx="235" cy="339" r="12" class="bp-dim" fill="none" stroke-dasharray="2 2"/>
+
+            <!-- ===== MASTER BEDROOM ===== -->
+            <rect x="360" y="170" width="65" height="85" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Pillows -->
+            <rect x="365" y="175" width="24" height="12" class="bp-line-thin" fill="none" rx="4"/>
+            <rect x="395" y="175" width="24" height="12" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Headboard -->
+            <line x1="360" y1="170" x2="425" y2="170" class="bp-line" stroke-width="1.5"/>
+            <!-- Nightstands -->
+            <rect x="348" y="178" width="10" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="427" y="178" width="10" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Dresser -->
+            <rect x="365" y="260" width="60" height="12" class="bp-line-thin" fill="none"/>
+            <!-- Rug -->
+            <rect x="355" y="165" width="80" height="95" class="bp-dim" fill="none" rx="2" stroke-dasharray="3 3"/>
+
+            <!-- ===== MASTER BATHROOM ===== -->
+            <!-- Bathtub -->
+            <rect x="355" y="290" width="70" height="30" class="bp-line-thin" fill="none" rx="10"/>
+            <rect x="360" y="295" width="60" height="20" class="bp-line-thin" fill="none" rx="7"/>
+            <!-- Toilet -->
+            <rect x="440" y="300" width="14" height="20" class="bp-line-thin" fill="none" rx="5"/>
+            <circle cx="447" cy="295" r="7" class="bp-line-thin" fill="none"/>
+            <!-- Vanity -->
+            <rect x="355" y="340" width="50" height="14" class="bp-line" fill="none" stroke-width="0.8"/>
+            <circle cx="370" cy="347" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="390" cy="347" r="5" class="bp-line-thin" fill="none"/>
+            <!-- Shower -->
+            <rect x="420" y="330" width="32" height="30" class="bp-line-thin" fill="none"/>
+            <circle cx="436" cy="345" r="4" class="bp-line-thin" fill="none"/>
+            <line x1="420" y1="330" x2="452" y2="360" class="bp-dim"/>
+            <!-- Towel rails -->
+            <line x1="413" y1="310" x2="413" y2="328" class="bp-line-thin"/>
+            <line x1="415" y1="310" x2="415" y2="328" class="bp-line-thin"/>
+
+            <!-- ===== HALLWAY CONSOLE ===== -->
+            <rect x="190" y="218" width="30" height="6" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== DIMENSION CHAINS — TOP ===== -->
+            <!-- Overall -->
+            <line x1="40" y1="15" x2="460" y2="15" class="bp-dim"/>
+            <line x1="40" y1="11" x2="40" y2="19" class="bp-dim"/>
+            <line x1="460" y1="11" x2="460" y2="19" class="bp-dim"/>
+            <text x="250" y="12" class="bp-text-dim" text-anchor="middle">18.40 m</text>
+            <!-- Segmented -->
+            <line x1="40" y1="22" x2="192" y2="22" class="bp-dim"/>
+            <line x1="40" y1="19" x2="40" y2="25" class="bp-dim"/>
+            <line x1="192" y1="19" x2="192" y2="25" class="bp-dim"/>
+            <text x="116" y="21" class="bp-text-dim" text-anchor="middle">6.48 m</text>
+            <line x1="192" y1="22" x2="320" y2="22" class="bp-dim"/>
+            <line x1="320" y1="19" x2="320" y2="25" class="bp-dim"/>
+            <text x="256" y="21" class="bp-text-dim" text-anchor="middle">5.48 m</text>
+
+            <!-- ===== DIMENSION CHAINS — BOTTOM ===== -->
+            <line x1="180" y1="385" x2="340" y2="385" class="bp-dim"/>
+            <line x1="180" y1="381" x2="180" y2="389" class="bp-dim"/>
+            <line x1="340" y1="381" x2="340" y2="389" class="bp-dim"/>
+            <text x="260" y="392" class="bp-text-dim" text-anchor="middle">6.84 m</text>
+            <line x1="340" y1="385" x2="460" y2="385" class="bp-dim"/>
+            <line x1="460" y1="381" x2="460" y2="389" class="bp-dim"/>
+            <text x="400" y="392" class="bp-text-dim" text-anchor="middle">5.12 m</text>
+            <!-- Overall bottom -->
+            <line x1="180" y1="395" x2="460" y2="395" class="bp-dim"/>
+            <line x1="180" y1="391" x2="180" y2="399" class="bp-dim"/>
+            <line x1="460" y1="391" x2="460" y2="399" class="bp-dim"/>
+            <text x="320" y="402" class="bp-text-dim" text-anchor="middle">11.96 m</text>
+
+            <!-- ===== DIMENSION CHAINS — LEFT ===== -->
+            <line x1="25" y1="30" x2="25" y2="210" class="bp-dim"/>
+            <line x1="21" y1="30" x2="29" y2="30" class="bp-dim"/>
+            <line x1="21" y1="210" x2="29" y2="210" class="bp-dim"/>
+            <text x="18" y="120" class="bp-text-dim" transform="rotate(-90, 18, 120)" text-anchor="middle">7.68 m</text>
+            <!-- Segmented left -->
+            <line x1="32" y1="30" x2="32" y2="124" class="bp-dim"/>
+            <line x1="28" y1="30" x2="36" y2="30" class="bp-dim"/>
+            <line x1="28" y1="124" x2="36" y2="124" class="bp-dim"/>
+            <text x="12" y="77" class="bp-text-dim" transform="rotate(-90, 12, 77)" text-anchor="middle">4.00 m</text>
+            <line x1="32" y1="124" x2="32" y2="210" class="bp-dim"/>
+            <line x1="28" y1="210" x2="36" y2="210" class="bp-dim"/>
+            <text x="12" y="167" class="bp-text-dim" transform="rotate(-90, 12, 167)" text-anchor="middle">3.68 m</text>
+
+            <!-- ===== DIMENSION CHAINS — RIGHT ===== -->
+            <line x1="475" y1="150" x2="475" y2="370" class="bp-dim"/>
+            <line x1="471" y1="150" x2="479" y2="150" class="bp-dim"/>
+            <line x1="471" y1="370" x2="479" y2="370" class="bp-dim"/>
+            <text x="482" y="260" class="bp-text-dim" transform="rotate(90, 482, 260)" text-anchor="middle">9.40 m</text>
+            <!-- Segmented right -->
+            <line x1="468" y1="150" x2="468" y2="284" class="bp-dim"/>
+            <line x1="464" y1="150" x2="472" y2="150" class="bp-dim"/>
+            <line x1="464" y1="284" x2="472" y2="284" class="bp-dim"/>
+            <text x="488" y="217" class="bp-text-dim" transform="rotate(90, 488, 217)" text-anchor="middle">5.72 m</text>
+            <line x1="468" y1="284" x2="468" y2="370" class="bp-dim"/>
+            <line x1="464" y1="370" x2="472" y2="370" class="bp-dim"/>
+            <text x="488" y="327" class="bp-text-dim" transform="rotate(90, 488, 327)" text-anchor="middle">3.68 m</text>
+
+            <!-- ===== INTERIOR DIMENSIONS ===== -->
+            <!-- Living width -->
+            <line x1="46" y1="112" x2="186" y2="112" class="bp-dim"/>
+            <line x1="46" y1="109" x2="46" y2="115" class="bp-dim"/>
+            <line x1="186" y1="109" x2="186" y2="115" class="bp-dim"/>
+            <text x="116" y="109" class="bp-text-dim" text-anchor="middle">6.00 m</text>
+            <!-- Kitchen width -->
+            <line x1="194" y1="140" x2="314" y2="140" class="bp-dim"/>
+            <line x1="194" y1="137" x2="194" y2="143" class="bp-dim"/>
+            <line x1="314" y1="137" x2="314" y2="143" class="bp-dim"/>
+            <text x="254" y="137" class="bp-text-dim" text-anchor="middle">5.14 m</text>
+            <!-- Master width -->
+            <line x1="346" y1="267" x2="454" y2="267" class="bp-dim"/>
+            <line x1="346" y1="264" x2="346" y2="270" class="bp-dim"/>
+            <line x1="454" y1="264" x2="454" y2="270" class="bp-dim"/>
+            <text x="400" y="264" class="bp-text-dim" text-anchor="middle">4.62 m</text>
+
+            <!-- ===== ROOM LABELS ===== -->
+            <text x="90" y="78" class="bp-text">Living Room</text>
+            <text x="240" y="78" class="bp-text">Kitchen</text>
+            <text x="70" y="165" class="bp-text">Bedroom 1</text>
+            <text x="140" y="165" class="bp-text">Bedroom 2</text>
+            <text x="390" y="225" class="bp-text">Master Suite</text>
+            <text x="400" y="315" class="bp-text">Bath</text>
+            <text x="230" y="340" class="bp-text">Dining</text>
+            <text x="285" y="255" class="bp-text-dim">Stair</text>
+            <text x="200" y="228" class="bp-text-dim">Hall</text>
+            <text x="80" y="260" class="bp-text-dim">Courtyard</text>
+
+            <!-- ===== AREA CALCULATIONS ===== -->
+            <text x="90" y="88" class="bp-text-dim">32.4 m²</text>
+            <text x="240" y="88" class="bp-text-dim">24.8 m²</text>
+            <text x="70" y="175" class="bp-text-dim">14.6 m²</text>
+            <text x="140" y="175" class="bp-text-dim">12.8 m²</text>
+            <text x="390" y="235" class="bp-text-dim">28.2 m²</text>
+            <text x="400" y="325" class="bp-text-dim">10.4 m²</text>
+            <text x="230" y="350" class="bp-text-dim">18.6 m²</text>
+
+            <!-- ===== GRID REFERENCES ===== -->
+            <text x="40" y="404" class="bp-text-grid">A</text>
+            <text x="192" y="404" class="bp-text-grid">B</text>
+            <text x="340" y="404" class="bp-text-grid">C</text>
+            <text x="460" y="404" class="bp-text-grid">D</text>
+            <text x="490" y="30" class="bp-text-grid">1</text>
+            <text x="490" y="150" class="bp-text-grid">2</text>
+            <text x="490" y="284" class="bp-text-grid">3</text>
+            <text x="490" y="370" class="bp-text-grid">4</text>
+            <!-- Grid dots -->
+            <circle cx="40" cy="30" r="3" class="bp-dot"/>
+            <circle cx="192" cy="30" r="3" class="bp-dot"/>
+            <circle cx="320" cy="30" r="3" class="bp-dot"/>
+            <circle cx="180" cy="150" r="3" class="bp-dot"/>
+            <circle cx="460" cy="150" r="3" class="bp-dot"/>
+            <circle cx="180" cy="370" r="3" class="bp-dot"/>
+            <circle cx="460" cy="370" r="3" class="bp-dot"/>
+            <circle cx="40" cy="210" r="3" class="bp-dot"/>
+
+            <!-- ===== TITLE BLOCK ===== -->
+            <text x="350" y="402" class="bp-text-accent">A-102</text>
+            <text x="390" y="402" class="bp-text-dim">L-Shaped Villa — Floor Plan</text>
+            <text x="46" y="414" class="bp-text-dim">Scale: 1:100 | Total: 186.4 m²</text>
+          </svg>
         </div>
       </div>
       <div class="hsplit-bottom">
@@ -92,17 +738,388 @@
       <div class="split-line split-line-h"></div>
     </section>
 
-    <!-- ══════ 4. VERTICAL SPLIT — reversed (right up / left down) ══════ -->
+    <!-- ══════ 4. VERTICAL SPLIT reversed — Office Tower Floor Plan + Terra Tower ══════ -->
     <section class="vsplit vsplit-reversed" data-split="vertical-reverse">
       <div class="vsplit-left">
-        <div class="visual-block block-plan">
-          <div class="plan-room plan-room-1"></div>
-          <div class="plan-room plan-room-2"></div>
-          <div class="plan-room plan-room-3"></div>
-          <div class="plan-wall plan-wall-1"></div>
-          <div class="plan-wall plan-wall-2"></div>
-          <div class="plan-wall plan-wall-3"></div>
-          <div class="plan-door"></div>
+        <div class="blueprint-container">
+          <svg class="blueprint" viewBox="0 0 500 420" data-blueprint>
+            <!-- ===== EXTERIOR WALLS (thick, 6px) ===== -->
+            <rect x="40" y="30" width="420" height="340" class="bp-line" fill="none" stroke-width="6"/>
+
+            <!-- ===== CENTRAL CORE (elevators/stairs) ===== -->
+            <rect x="200" y="145" width="100" height="110" class="bp-line" fill="none" stroke-width="3"/>
+            <!-- Elevator car 1 -->
+            <rect x="210" y="158" width="30" height="26" class="bp-line" fill="none" stroke-width="1"/>
+            <line x1="225" y1="158" x2="225" y2="184" class="bp-line-thin"/>
+            <!-- Elevator car 2 -->
+            <rect x="210" y="190" width="30" height="26" class="bp-line" fill="none" stroke-width="1"/>
+            <line x1="225" y1="190" x2="225" y2="216" class="bp-line-thin"/>
+            <!-- Stair treads -->
+            <line x1="250" y1="152" x2="290" y2="152" class="bp-line-thin"/>
+            <line x1="250" y1="159" x2="290" y2="159" class="bp-line-thin"/>
+            <line x1="250" y1="166" x2="290" y2="166" class="bp-line-thin"/>
+            <line x1="250" y1="173" x2="290" y2="173" class="bp-line-thin"/>
+            <line x1="250" y1="180" x2="290" y2="180" class="bp-line-thin"/>
+            <line x1="250" y1="187" x2="290" y2="187" class="bp-line-thin"/>
+            <line x1="250" y1="194" x2="290" y2="194" class="bp-line-thin"/>
+            <line x1="250" y1="201" x2="290" y2="201" class="bp-line-thin"/>
+            <line x1="250" y1="208" x2="290" y2="208" class="bp-line-thin"/>
+            <line x1="250" y1="215" x2="290" y2="215" class="bp-line-thin"/>
+            <line x1="250" y1="222" x2="290" y2="222" class="bp-line-thin"/>
+            <line x1="250" y1="229" x2="290" y2="229" class="bp-line-thin"/>
+            <line x1="250" y1="236" x2="290" y2="236" class="bp-line-thin"/>
+            <line x1="250" y1="243" x2="290" y2="243" class="bp-line-thin"/>
+            <line x1="270" y1="152" x2="270" y2="248" class="bp-accent-line"/>
+            <!-- Stair arrow -->
+            <line x1="270" y1="152" x2="270" y2="140" class="bp-accent-line"/>
+            <line x1="267" y1="144" x2="270" y2="138" class="bp-accent-line"/>
+            <line x1="273" y1="144" x2="270" y2="138" class="bp-accent-line"/>
+            <!-- Mechanical/electrical room in core -->
+            <rect x="200" y="222" width="48" height="33" class="bp-line" fill="none" stroke-width="1"/>
+
+            <!-- ===== INTERIOR WALLS (4px rects) ===== -->
+            <!-- Conference room walls -->
+            <rect x="40" y="30" width="150" height="110" class="bp-line" fill="none" stroke-width="1.5"/>
+            <!-- Meeting room A wall -->
+            <rect x="310" y="30" width="75" height="65" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Meeting room B wall -->
+            <rect x="390" y="30" width="70" height="65" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Restroom block M -->
+            <rect x="200" y="30" width="50" height="55" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Restroom block W -->
+            <rect x="254" y="30" width="50" height="55" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Break room -->
+            <rect x="40" y="260" width="150" height="110" class="bp-line" fill="none" stroke-width="1.5"/>
+            <!-- Lounge / collaboration area -->
+            <rect x="310" y="280" width="150" height="90" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Manager office -->
+            <rect x="310" y="100" width="150" height="70" class="bp-line" fill="none" stroke-width="1"/>
+
+            <!-- ===== COLUMN GRID ===== -->
+            <circle cx="100" cy="90" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="250" cy="90" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="400" cy="90" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="100" cy="200" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="400" cy="200" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="100" cy="310" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="250" cy="310" r="3.5" class="bp-line" fill="none"/>
+            <circle cx="400" cy="310" r="3.5" class="bp-line" fill="none"/>
+
+            <!-- ===== WINDOWS (double lines) ===== -->
+            <!-- N wall windows -->
+            <line x1="60" y1="28" x2="130" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="60" y1="33" x2="130" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <line x1="320" y1="28" x2="380" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="320" y1="33" x2="380" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <line x1="400" y1="28" x2="445" y2="28" class="bp-accent-line" stroke-width="2"/>
+            <line x1="400" y1="33" x2="445" y2="33" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall windows -->
+            <line x1="458" y1="110" x2="458" y2="180" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="110" x2="462" y2="180" class="bp-accent-line" stroke-width="0.5"/>
+            <line x1="458" y1="220" x2="458" y2="290" class="bp-accent-line" stroke-width="2"/>
+            <line x1="462" y1="220" x2="462" y2="290" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall windows -->
+            <line x1="60" y1="368" x2="130" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="60" y1="372" x2="130" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <line x1="220" y1="368" x2="300" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="220" y1="372" x2="300" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <line x1="380" y1="368" x2="440" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="380" y1="372" x2="440" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall windows -->
+            <line x1="38" y1="160" x2="38" y2="240" class="bp-accent-line" stroke-width="2"/>
+            <line x1="42" y1="160" x2="42" y2="240" class="bp-accent-line" stroke-width="0.5"/>
+
+            <!-- ===== DOOR SWINGS ===== -->
+            <!-- Conference room -->
+            <path d="M 190 100 Q 175 100 175 115" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="190" y1="100" x2="175" y2="100" class="bp-line-thin"/>
+            <!-- Meeting room A -->
+            <path d="M 310 70 Q 295 70 295 85" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="310" y1="70" x2="295" y2="70" class="bp-line-thin"/>
+            <!-- Meeting room B -->
+            <path d="M 390 70 Q 375 70 375 85" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="390" y1="70" x2="375" y2="70" class="bp-line-thin"/>
+            <!-- Restroom M -->
+            <path d="M 200 65 Q 200 80 185 80" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="200" y1="65" x2="200" y2="80" class="bp-line-thin"/>
+            <!-- Restroom W -->
+            <path d="M 304 65 Q 304 80 319 80" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="304" y1="65" x2="304" y2="80" class="bp-line-thin"/>
+            <!-- Break room -->
+            <path d="M 190 310 Q 175 310 175 295" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="190" y1="310" x2="175" y2="310" class="bp-line-thin"/>
+            <!-- Manager office -->
+            <path d="M 310 145 Q 295 145 295 130" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="310" y1="145" x2="295" y2="145" class="bp-line-thin"/>
+            <!-- Lounge -->
+            <path d="M 310 340 Q 295 340 295 325" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="310" y1="340" x2="295" y2="340" class="bp-line-thin"/>
+            <!-- Core doors -->
+            <path d="M 200 200 Q 188 200 188 188" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <path d="M 300 200 Q 312 200 312 188" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+
+            <!-- ===== CONFERENCE ROOM FURNITURE ===== -->
+            <!-- Large oval table -->
+            <rect x="60" y="55" width="110" height="50" class="bp-line-thin" fill="none" rx="22"/>
+            <!-- Chairs around table -->
+            <circle cx="75" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="95" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="115" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="135" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="155" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="75" cy="112" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="95" cy="112" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="115" cy="112" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="135" cy="112" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="155" cy="112" r="4" class="bp-line-thin" fill="none"/>
+            <!-- End chairs -->
+            <circle cx="52" cy="80" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="178" cy="80" r="4" class="bp-line-thin" fill="none"/>
+            <!-- Screen/display -->
+            <rect x="45" y="62" width="5" height="36" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== MEETING ROOMS ===== -->
+            <!-- Meeting A: round table -->
+            <circle cx="347" cy="62" r="14" class="bp-line-thin" fill="none"/>
+            <circle cx="335" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="360" cy="48" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="335" cy="76" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="360" cy="76" r="4" class="bp-line-thin" fill="none"/>
+            <!-- Meeting B: rectangular table -->
+            <rect x="402" y="48" width="45" height="20" class="bp-line-thin" fill="none" rx="5"/>
+            <circle cx="412" cy="42" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="437" cy="42" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="412" cy="74" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="437" cy="74" r="4" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== RESTROOMS ===== -->
+            <!-- WC-M toilet stalls -->
+            <line x1="213" y1="35" x2="213" y2="75" class="bp-line-thin"/>
+            <line x1="227" y1="35" x2="227" y2="75" class="bp-line-thin"/>
+            <line x1="241" y1="35" x2="241" y2="75" class="bp-line-thin"/>
+            <!-- WC-M toilets -->
+            <rect x="204" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="217" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="231" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- WC-M sinks -->
+            <rect x="204" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="217" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="231" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- WC-W toilet stalls -->
+            <line x1="267" y1="35" x2="267" y2="75" class="bp-line-thin"/>
+            <line x1="281" y1="35" x2="281" y2="75" class="bp-line-thin"/>
+            <line x1="295" y1="35" x2="295" y2="75" class="bp-line-thin"/>
+            <!-- WC-W toilets -->
+            <rect x="258" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="271" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="285" y="55" width="8" height="12" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- WC-W sinks -->
+            <rect x="258" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="271" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="285" y="36" width="6" height="6" class="bp-line-thin" fill="none" rx="2"/>
+
+            <!-- ===== OPEN OFFICE — left wing desks ===== -->
+            <!-- Row 1 -->
+            <rect x="55" y="155" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="55" y="168" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Row 2 -->
+            <rect x="55" y="188" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="55" y="201" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Row 3 -->
+            <rect x="55" y="221" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="55" y="234" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Desk chairs (dots) -->
+            <circle cx="72" cy="180" r="2" class="bp-dot"/>
+            <circle cx="92" cy="180" r="2" class="bp-dot"/>
+            <circle cx="72" cy="213" r="2" class="bp-dot"/>
+            <circle cx="92" cy="213" r="2" class="bp-dot"/>
+            <circle cx="72" cy="246" r="2" class="bp-dot"/>
+            <circle cx="92" cy="246" r="2" class="bp-dot"/>
+            <!-- Open office right wing desks -->
+            <rect x="130" y="155" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="130" y="168" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="130" y="188" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="130" y="201" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="130" y="221" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="130" y="234" width="55" height="10" class="bp-line-thin" fill="none"/>
+            <!-- More chair dots -->
+            <circle cx="147" cy="180" r="2" class="bp-dot"/>
+            <circle cx="167" cy="180" r="2" class="bp-dot"/>
+            <circle cx="147" cy="213" r="2" class="bp-dot"/>
+            <circle cx="167" cy="213" r="2" class="bp-dot"/>
+
+            <!-- ===== MANAGER OFFICE ===== -->
+            <!-- Desk -->
+            <rect x="340" y="115" width="60" height="22" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Chair -->
+            <circle cx="370" cy="145" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Guest chairs -->
+            <rect x="330" y="108" width="12" height="10" class="bp-line-thin" fill="none" rx="2"/>
+            <rect x="400" y="108" width="12" height="10" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Bookshelf -->
+            <rect x="420" y="105" width="30" height="8" class="bp-line-thin" fill="none"/>
+            <rect x="420" y="117" width="30" height="8" class="bp-line-thin" fill="none"/>
+            <!-- Credenza -->
+            <rect x="315" y="155" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Plant -->
+            <circle cx="445" cy="155" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="445" cy="155" r="1.5" class="bp-dot"/>
+
+            <!-- ===== RIGHT WING WORKSTATIONS ===== -->
+            <rect x="320" y="190" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="380" y="190" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="320" y="205" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="380" y="205" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="320" y="230" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="380" y="230" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="320" y="245" width="50" height="10" class="bp-line-thin" fill="none"/>
+            <rect x="380" y="245" width="50" height="10" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== BREAK ROOM ===== -->
+            <!-- Counter -->
+            <rect x="48" y="268" width="80" height="12" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Sink -->
+            <rect x="55" y="270" width="14" height="10" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="62" y1="270" x2="62" y2="280" class="bp-line-thin"/>
+            <!-- Microwave -->
+            <rect x="78" y="270" width="14" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Refrigerator -->
+            <rect x="100" y="265" width="20" height="22" class="bp-line" fill="none" stroke-width="0.8"/>
+            <line x1="100" y1="276" x2="120" y2="276" class="bp-line-thin"/>
+            <!-- Round tables -->
+            <circle cx="80" cy="310" r="14" class="bp-line-thin" fill="none"/>
+            <circle cx="130" cy="320" r="14" class="bp-line-thin" fill="none"/>
+            <!-- Table chairs -->
+            <circle cx="70" cy="298" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="90" cy="298" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="70" cy="322" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="90" cy="322" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="118" cy="310" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="142" cy="310" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="120" cy="334" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="140" cy="334" r="4" class="bp-line-thin" fill="none"/>
+            <!-- Vending machine -->
+            <rect x="155" y="330" width="22" height="14" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== LOUNGE / COLLABORATION ===== -->
+            <!-- Sofas -->
+            <rect x="325" y="300" width="50" height="20" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="350" y1="303" x2="350" y2="317" class="bp-line-thin"/>
+            <rect x="325" y="330" width="50" height="20" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="350" y1="333" x2="350" y2="347" class="bp-line-thin"/>
+            <!-- Coffee table -->
+            <rect x="335" y="322" width="30" height="6" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Lounge chairs -->
+            <rect x="400" y="300" width="22" height="40" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Bookshelf wall -->
+            <rect x="430" y="290" width="22" height="8" class="bp-line-thin" fill="none"/>
+            <rect x="430" y="302" width="22" height="8" class="bp-line-thin" fill="none"/>
+            <rect x="430" y="314" width="22" height="8" class="bp-line-thin" fill="none"/>
+            <!-- Bean bag -->
+            <circle cx="440" cy="345" r="10" class="bp-dim" fill="none" stroke-dasharray="3 3"/>
+
+            <!-- ===== DIMENSION CHAINS — TOP ===== -->
+            <line x1="40" y1="15" x2="460" y2="15" class="bp-dim"/>
+            <line x1="40" y1="11" x2="40" y2="19" class="bp-dim"/>
+            <line x1="460" y1="11" x2="460" y2="19" class="bp-dim"/>
+            <text x="250" y="12" class="bp-text-dim" text-anchor="middle">25.20 m</text>
+            <!-- Segmented -->
+            <line x1="40" y1="22" x2="200" y2="22" class="bp-dim"/>
+            <line x1="40" y1="19" x2="40" y2="25" class="bp-dim"/>
+            <line x1="200" y1="19" x2="200" y2="25" class="bp-dim"/>
+            <text x="120" y="21" class="bp-text-dim" text-anchor="middle">9.60 m</text>
+            <line x1="200" y1="22" x2="300" y2="22" class="bp-dim"/>
+            <line x1="300" y1="19" x2="300" y2="25" class="bp-dim"/>
+            <text x="250" y="21" class="bp-text-dim" text-anchor="middle">6.00 m</text>
+            <line x1="300" y1="22" x2="460" y2="22" class="bp-dim"/>
+            <line x1="460" y1="19" x2="460" y2="25" class="bp-dim"/>
+            <text x="380" y="21" class="bp-text-dim" text-anchor="middle">9.60 m</text>
+
+            <!-- ===== DIMENSION CHAINS — BOTTOM ===== -->
+            <line x1="40" y1="385" x2="460" y2="385" class="bp-dim"/>
+            <line x1="40" y1="381" x2="40" y2="389" class="bp-dim"/>
+            <line x1="190" y1="381" x2="190" y2="389" class="bp-dim"/>
+            <line x1="310" y1="381" x2="310" y2="389" class="bp-dim"/>
+            <line x1="460" y1="381" x2="460" y2="389" class="bp-dim"/>
+            <text x="115" y="392" class="bp-text-dim" text-anchor="middle">9.00 m</text>
+            <text x="250" y="392" class="bp-text-dim" text-anchor="middle">7.20 m</text>
+            <text x="385" y="392" class="bp-text-dim" text-anchor="middle">9.00 m</text>
+
+            <!-- ===== DIMENSION CHAINS — LEFT ===== -->
+            <line x1="25" y1="30" x2="25" y2="370" class="bp-dim"/>
+            <line x1="21" y1="30" x2="29" y2="30" class="bp-dim"/>
+            <line x1="21" y1="370" x2="29" y2="370" class="bp-dim"/>
+            <text x="18" y="200" class="bp-text-dim" transform="rotate(-90, 18, 200)" text-anchor="middle">20.40 m</text>
+            <!-- Segmented left -->
+            <line x1="32" y1="30" x2="32" y2="140" class="bp-dim"/>
+            <line x1="28" y1="30" x2="36" y2="30" class="bp-dim"/>
+            <line x1="28" y1="140" x2="36" y2="140" class="bp-dim"/>
+            <text x="12" y="85" class="bp-text-dim" transform="rotate(-90, 12, 85)" text-anchor="middle">6.60 m</text>
+            <line x1="32" y1="140" x2="32" y2="260" class="bp-dim"/>
+            <line x1="28" y1="260" x2="36" y2="260" class="bp-dim"/>
+            <text x="12" y="200" class="bp-text-dim" transform="rotate(-90, 12, 200)" text-anchor="middle">7.20 m</text>
+            <line x1="32" y1="260" x2="32" y2="370" class="bp-dim"/>
+            <line x1="28" y1="370" x2="36" y2="370" class="bp-dim"/>
+            <text x="12" y="315" class="bp-text-dim" transform="rotate(-90, 12, 315)" text-anchor="middle">6.60 m</text>
+
+            <!-- ===== DIMENSION CHAINS — RIGHT ===== -->
+            <line x1="475" y1="30" x2="475" y2="370" class="bp-dim"/>
+            <line x1="471" y1="30" x2="479" y2="30" class="bp-dim"/>
+            <line x1="471" y1="145" x2="479" y2="145" class="bp-dim"/>
+            <line x1="471" y1="255" x2="479" y2="255" class="bp-dim"/>
+            <line x1="471" y1="370" x2="479" y2="370" class="bp-dim"/>
+            <text x="482" y="88" class="bp-text-dim" transform="rotate(90, 482, 88)" text-anchor="middle">6.90 m</text>
+            <text x="482" y="200" class="bp-text-dim" transform="rotate(90, 482, 200)" text-anchor="middle">6.60 m</text>
+            <text x="482" y="313" class="bp-text-dim" transform="rotate(90, 482, 313)" text-anchor="middle">6.90 m</text>
+
+            <!-- ===== ROOM LABELS ===== -->
+            <text x="90" y="75" class="bp-text">Conference Room</text>
+            <text x="100" y="195" class="bp-text">Open Office</text>
+            <text x="345" y="56" class="bp-text">MTG-A</text>
+            <text x="420" y="56" class="bp-text">MTG-B</text>
+            <text x="215" y="50" class="bp-text-dim">WC-M</text>
+            <text x="270" y="50" class="bp-text-dim">WC-W</text>
+            <text x="230" y="185" class="bp-text">Core</text>
+            <text x="380" y="130" class="bp-text">Manager</text>
+            <text x="370" y="215" class="bp-text-dim">Workstations</text>
+            <text x="85" y="300" class="bp-text">Break Room</text>
+            <text x="360" y="315" class="bp-text">Lounge</text>
+            <text x="215" y="242" class="bp-text-dim">Mech/Elec</text>
+
+            <!-- ===== AREA CALCULATIONS ===== -->
+            <text x="90" y="85" class="bp-text-dim">48.2 m²</text>
+            <text x="100" y="205" class="bp-text-dim">115.4 m²</text>
+            <text x="345" y="65" class="bp-text-dim">12.8 m²</text>
+            <text x="420" y="65" class="bp-text-dim">11.6 m²</text>
+            <text x="230" y="195" class="bp-text-dim">36.0 m²</text>
+            <text x="380" y="140" class="bp-text-dim">32.4 m²</text>
+            <text x="85" y="310" class="bp-text-dim">35.2 m²</text>
+            <text x="360" y="325" class="bp-text-dim">28.8 m²</text>
+
+            <!-- ===== GRID REFERENCES ===== -->
+            <text x="40" y="404" class="bp-text-grid">A</text>
+            <text x="200" y="404" class="bp-text-grid">B</text>
+            <text x="300" y="404" class="bp-text-grid">C</text>
+            <text x="460" y="404" class="bp-text-grid">D</text>
+            <text x="490" y="30" class="bp-text-grid">1</text>
+            <text x="490" y="145" class="bp-text-grid">2</text>
+            <text x="490" y="255" class="bp-text-grid">3</text>
+            <text x="490" y="370" class="bp-text-grid">4</text>
+            <!-- Grid dots -->
+            <circle cx="40" cy="30" r="3" class="bp-dot"/>
+            <circle cx="200" cy="30" r="3" class="bp-dot"/>
+            <circle cx="300" cy="30" r="3" class="bp-dot"/>
+            <circle cx="460" cy="30" r="3" class="bp-dot"/>
+            <circle cx="40" cy="370" r="3" class="bp-dot"/>
+            <circle cx="200" cy="370" r="3" class="bp-dot"/>
+            <circle cx="300" cy="370" r="3" class="bp-dot"/>
+            <circle cx="460" cy="370" r="3" class="bp-dot"/>
+
+            <!-- ===== TITLE BLOCK ===== -->
+            <text x="350" y="402" class="bp-text-accent">A-201</text>
+            <text x="390" y="402" class="bp-text-dim">Office Tower — Level 14</text>
+            <text x="46" y="414" class="bp-text-dim">Scale: 1:150 | GFA: 514.8 m²</text>
+          </svg>
         </div>
       </div>
       <div class="vsplit-right">
@@ -117,7 +1134,7 @@
       <div class="split-line split-line-v"></div>
     </section>
 
-    <!-- ══════ 5. HORIZONTAL SPLIT — reversed (top right / bottom left) ══════ -->
+    <!-- ══════ 5. HORIZONTAL SPLIT reversed — Process + Detail ══════ -->
     <section class="hsplit hsplit-reversed" data-split="horizontal-reverse">
       <div class="hsplit-top">
         <div class="panel-label">
@@ -141,21 +1158,227 @@
         </div>
       </div>
       <div class="hsplit-bottom">
-        <div class="visual-block block-detail">
-          <div class="detail-beam"></div>
-          <div class="detail-beam detail-beam-2"></div>
-          <div class="detail-joint"></div>
-          <div class="detail-bolt"></div>
-          <div class="detail-bolt detail-bolt-2"></div>
-          <div class="detail-line detail-line-1"></div>
-          <div class="detail-line detail-line-2"></div>
-          <div class="detail-dimension"></div>
+        <div class="blueprint-container">
+          <svg class="blueprint" viewBox="0 0 500 420" data-blueprint>
+            <!-- ===== PROPERTY BOUNDARY (dashed) ===== -->
+            <rect x="20" y="20" width="460" height="380" class="bp-dim" fill="none" stroke-dasharray="10 5"/>
+
+            <!-- ===== SETBACK LINES ===== -->
+            <line x1="45" y1="40" x2="45" y2="380" class="bp-dim" stroke-dasharray="3 5"/>
+            <line x1="455" y1="40" x2="455" y2="380" class="bp-dim" stroke-dasharray="3 5"/>
+            <line x1="40" y1="45" x2="460" y2="45" class="bp-dim" stroke-dasharray="3 5"/>
+            <line x1="40" y1="375" x2="460" y2="375" class="bp-dim" stroke-dasharray="3 5"/>
+
+            <!-- ===== MAIN BUILDING FOOTPRINT (thick walls) ===== -->
+            <rect x="70" y="70" width="220" height="170" class="bp-line" fill="none" stroke-width="6"/>
+            <!-- Building wing -->
+            <rect x="290" y="100" width="120" height="110" class="bp-line" fill="none" stroke-width="6"/>
+            <!-- Connector between main and wing -->
+            <rect x="286" y="130" width="12" height="40" class="bp-line" fill="none" stroke-width="3"/>
+
+            <!-- ===== BUILDING INTERIOR DETAIL ===== -->
+            <!-- Courtyard void in main building -->
+            <rect x="120" y="110" width="100" height="80" class="bp-accent-line" fill="none" stroke-width="1.5"/>
+            <rect x="124" y="114" width="92" height="72" class="bp-dim" fill="none" stroke-dasharray="3 3"/>
+            <!-- Interior walls main -->
+            <line x1="70" y1="155" x2="120" y2="155" class="bp-line-thin"/>
+            <line x1="220" y1="155" x2="290" y2="155" class="bp-line-thin"/>
+            <line x1="150" y1="70" x2="150" y2="110" class="bp-line-thin"/>
+            <line x1="150" y1="190" x2="150" y2="240" class="bp-line-thin"/>
+            <line x1="220" y1="70" x2="220" y2="110" class="bp-line-thin"/>
+            <line x1="220" y1="190" x2="220" y2="240" class="bp-line-thin"/>
+            <!-- Wing interior -->
+            <line x1="350" y1="100" x2="350" y2="210" class="bp-line-thin"/>
+            <line x1="290" y1="160" x2="410" y2="160" class="bp-line-thin"/>
+            <!-- Entry canopy -->
+            <rect x="130" y="238" width="60" height="12" class="bp-dim" fill="none" stroke-dasharray="3 2"/>
+
+            <!-- ===== DRIVEWAY ===== -->
+            <line x1="170" y1="250" x2="170" y2="400" class="bp-line-thin"/>
+            <line x1="210" y1="250" x2="210" y2="400" class="bp-line-thin"/>
+            <!-- Driveway center line -->
+            <line x1="190" y1="260" x2="190" y2="395" class="bp-dim" stroke-dasharray="6 4"/>
+            <!-- Circular arrival court -->
+            <circle cx="190" cy="275" r="25" class="bp-line-thin" fill="none"/>
+            <circle cx="190" cy="275" r="8" class="bp-line-thin" fill="none"/>
+            <circle cx="190" cy="275" r="2" class="bp-dot"/>
+
+            <!-- ===== PARKING AREA ===== -->
+            <rect x="70" y="280" width="80" height="90" class="bp-line-thin" fill="none"/>
+            <!-- Parking lines -->
+            <line x1="70" y1="300" x2="150" y2="300" class="bp-line-thin"/>
+            <line x1="70" y1="320" x2="150" y2="320" class="bp-line-thin"/>
+            <line x1="70" y1="340" x2="150" y2="340" class="bp-line-thin"/>
+            <line x1="70" y1="360" x2="150" y2="360" class="bp-line-thin"/>
+            <line x1="110" y1="280" x2="110" y2="370" class="bp-line-thin"/>
+            <!-- Parking space numbers -->
+            <text x="85" y="295" class="bp-text-dim" text-anchor="middle">1</text>
+            <text x="85" y="315" class="bp-text-dim" text-anchor="middle">2</text>
+            <text x="85" y="335" class="bp-text-dim" text-anchor="middle">3</text>
+            <text x="85" y="355" class="bp-text-dim" text-anchor="middle">4</text>
+            <text x="130" y="295" class="bp-text-dim" text-anchor="middle">5</text>
+            <text x="130" y="315" class="bp-text-dim" text-anchor="middle">6</text>
+            <text x="130" y="335" class="bp-text-dim" text-anchor="middle">7</text>
+            <text x="130" y="355" class="bp-text-dim" text-anchor="middle">8</text>
+
+            <!-- ===== POOL ===== -->
+            <rect x="300" y="250" width="80" height="40" class="bp-accent-line" fill="none" rx="12" stroke-width="1.5"/>
+            <rect x="306" y="256" width="68" height="28" class="bp-line-thin" fill="none" rx="8"/>
+            <!-- Pool deck hatching -->
+            <line x1="295" y1="248" x2="295" y2="295" class="bp-dim" stroke-dasharray="2 3"/>
+            <line x1="385" y1="248" x2="385" y2="295" class="bp-dim" stroke-dasharray="2 3"/>
+            <line x1="293" y1="248" x2="387" y2="248" class="bp-dim" stroke-dasharray="2 3"/>
+            <line x1="293" y1="295" x2="387" y2="295" class="bp-dim" stroke-dasharray="2 3"/>
+
+            <!-- ===== LANDSCAPING TREES ===== -->
+            <!-- Row along east property -->
+            <circle cx="430" cy="80" r="14" class="bp-line-thin" fill="none"/>
+            <circle cx="430" cy="80" r="2.5" class="bp-dot"/>
+            <circle cx="440" cy="130" r="12" class="bp-line-thin" fill="none"/>
+            <circle cx="440" cy="130" r="2.5" class="bp-dot"/>
+            <circle cx="435" cy="180" r="15" class="bp-line-thin" fill="none"/>
+            <circle cx="435" cy="180" r="2.5" class="bp-dot"/>
+            <circle cx="430" cy="230" r="11" class="bp-line-thin" fill="none"/>
+            <circle cx="430" cy="230" r="2.5" class="bp-dot"/>
+            <!-- Trees along south -->
+            <circle cx="260" cy="350" r="13" class="bp-line-thin" fill="none"/>
+            <circle cx="260" cy="350" r="2.5" class="bp-dot"/>
+            <circle cx="330" cy="340" r="10" class="bp-line-thin" fill="none"/>
+            <circle cx="330" cy="340" r="2.5" class="bp-dot"/>
+            <circle cx="400" cy="350" r="16" class="bp-line-thin" fill="none"/>
+            <circle cx="400" cy="350" r="2.5" class="bp-dot"/>
+            <circle cx="440" cy="320" r="12" class="bp-line-thin" fill="none"/>
+            <circle cx="440" cy="320" r="2.5" class="bp-dot"/>
+            <!-- Hedge along north -->
+            <circle cx="320" cy="60" r="8" class="bp-line-thin" fill="none"/>
+            <circle cx="320" cy="60" r="1.5" class="bp-dot"/>
+            <circle cx="340" cy="55" r="9" class="bp-line-thin" fill="none"/>
+            <circle cx="340" cy="55" r="1.5" class="bp-dot"/>
+            <circle cx="362" cy="60" r="7" class="bp-line-thin" fill="none"/>
+            <circle cx="362" cy="60" r="1.5" class="bp-dot"/>
+            <circle cx="380" cy="58" r="8" class="bp-line-thin" fill="none"/>
+            <circle cx="380" cy="58" r="1.5" class="bp-dot"/>
+            <!-- Front garden trees -->
+            <circle cx="90" cy="260" r="10" class="bp-line-thin" fill="none"/>
+            <circle cx="90" cy="260" r="2" class="bp-dot"/>
+            <circle cx="240" cy="270" r="12" class="bp-line-thin" fill="none"/>
+            <circle cx="240" cy="270" r="2" class="bp-dot"/>
+
+            <!-- ===== PATHWAYS ===== -->
+            <!-- Front walk -->
+            <line x1="160" y1="240" x2="140" y2="260" class="bp-accent-line"/>
+            <line x1="160" y1="250" x2="140" y2="270" class="bp-accent-line"/>
+            <!-- Side path to pool -->
+            <line x1="290" y1="215" x2="300" y2="250" class="bp-accent-line"/>
+            <line x1="296" y1="215" x2="306" y2="250" class="bp-accent-line"/>
+
+            <!-- ===== NORTH ARROW ===== -->
+            <line x1="450" y1="50" x2="450" y2="25" class="bp-accent-line" stroke-width="1.5"/>
+            <line x1="447" y1="30" x2="450" y2="22" class="bp-accent-line"/>
+            <line x1="453" y1="30" x2="450" y2="22" class="bp-accent-line"/>
+
+            <!-- ===== DIMENSION CHAINS — TOP ===== -->
+            <!-- Property overall -->
+            <line x1="20" y1="10" x2="480" y2="10" class="bp-dim"/>
+            <line x1="20" y1="6" x2="20" y2="14" class="bp-dim"/>
+            <line x1="480" y1="6" x2="480" y2="14" class="bp-dim"/>
+            <text x="250" y="8" class="bp-text-dim" text-anchor="middle">45.00 m</text>
+            <!-- Building width -->
+            <line x1="70" y1="60" x2="290" y2="60" class="bp-dim"/>
+            <line x1="70" y1="56" x2="70" y2="64" class="bp-dim"/>
+            <line x1="290" y1="56" x2="290" y2="64" class="bp-dim"/>
+            <text x="180" y="57" class="bp-text-dim" text-anchor="middle">22.00 m</text>
+            <!-- Wing width -->
+            <line x1="290" y1="92" x2="410" y2="92" class="bp-dim"/>
+            <line x1="290" y1="88" x2="290" y2="96" class="bp-dim"/>
+            <line x1="410" y1="88" x2="410" y2="96" class="bp-dim"/>
+            <text x="350" y="89" class="bp-text-dim" text-anchor="middle">12.00 m</text>
+
+            <!-- ===== DIMENSION CHAINS — BOTTOM ===== -->
+            <line x1="20" y1="408" x2="480" y2="408" class="bp-dim"/>
+            <line x1="20" y1="404" x2="20" y2="412" class="bp-dim"/>
+            <line x1="480" y1="404" x2="480" y2="412" class="bp-dim"/>
+            <text x="250" y="415" class="bp-text-dim" text-anchor="middle">45.00 m</text>
+            <!-- Segmented -->
+            <line x1="70" y1="398" x2="150" y2="398" class="bp-dim"/>
+            <line x1="70" y1="394" x2="70" y2="402" class="bp-dim"/>
+            <line x1="150" y1="394" x2="150" y2="402" class="bp-dim"/>
+            <text x="110" y="395" class="bp-text-dim" text-anchor="middle">8.00 m</text>
+            <line x1="170" y1="398" x2="210" y2="398" class="bp-dim"/>
+            <line x1="170" y1="394" x2="170" y2="402" class="bp-dim"/>
+            <line x1="210" y1="394" x2="210" y2="402" class="bp-dim"/>
+            <text x="190" y="395" class="bp-text-dim" text-anchor="middle">4.00 m</text>
+
+            <!-- ===== DIMENSION CHAINS — LEFT ===== -->
+            <line x1="10" y1="20" x2="10" y2="400" class="bp-dim"/>
+            <line x1="6" y1="20" x2="14" y2="20" class="bp-dim"/>
+            <line x1="6" y1="400" x2="14" y2="400" class="bp-dim"/>
+            <text x="5" y="210" class="bp-text-dim" transform="rotate(-90, 5, 210)" text-anchor="middle">33.00 m</text>
+            <!-- Building height dim -->
+            <line x1="58" y1="70" x2="58" y2="240" class="bp-dim"/>
+            <line x1="54" y1="70" x2="62" y2="70" class="bp-dim"/>
+            <line x1="54" y1="240" x2="62" y2="240" class="bp-dim"/>
+            <text x="52" y="155" class="bp-text-dim" transform="rotate(-90, 52, 155)" text-anchor="middle">17.00 m</text>
+
+            <!-- ===== DIMENSION CHAINS — RIGHT ===== -->
+            <line x1="470" y1="100" x2="470" y2="210" class="bp-dim"/>
+            <line x1="466" y1="100" x2="474" y2="100" class="bp-dim"/>
+            <line x1="466" y1="210" x2="474" y2="210" class="bp-dim"/>
+            <text x="476" y="155" class="bp-text-dim" transform="rotate(90, 476, 155)" text-anchor="middle">11.00 m</text>
+
+            <!-- ===== LABELS ===== -->
+            <text x="140" y="135" class="bp-text">Main Building</text>
+            <text x="320" y="135" class="bp-text">Wing B</text>
+            <text x="140" y="125" class="bp-text-dim">Courtyard</text>
+            <text x="95" y="330" class="bp-text">Parking</text>
+            <text x="320" y="270" class="bp-text">Pool</text>
+            <text x="430" y="290" class="bp-text-dim">Landscape</text>
+            <text x="180" y="295" class="bp-text-dim">Driveway</text>
+
+            <!-- ===== AREA CALCULATIONS ===== -->
+            <text x="140" y="145" class="bp-text-dim">576.2 m²</text>
+            <text x="320" y="145" class="bp-text-dim">195.0 m²</text>
+            <text x="95" y="340" class="bp-text-dim">8 Spaces</text>
+            <text x="320" y="280" class="bp-text-dim">32.0 m²</text>
+
+            <!-- ===== SETBACK LABELS ===== -->
+            <text x="35" y="200" class="bp-text-dim" transform="rotate(-90, 35, 200)">4.5 m Setback</text>
+            <text x="462" y="200" class="bp-text-dim" transform="rotate(90, 462, 200)">4.5 m Setback</text>
+            <text x="250" y="42" class="bp-text-dim" text-anchor="middle">4.5 m Setback</text>
+            <text x="250" y="382" class="bp-text-dim" text-anchor="middle">4.5 m Setback</text>
+
+            <!-- ===== GRID REFERENCES ===== -->
+            <text x="70" y="404" class="bp-text-grid">A</text>
+            <text x="290" y="404" class="bp-text-grid">B</text>
+            <text x="410" y="404" class="bp-text-grid">C</text>
+            <text x="490" y="70" class="bp-text-grid">1</text>
+            <text x="490" y="240" class="bp-text-grid">2</text>
+            <text x="490" y="375" class="bp-text-grid">3</text>
+            <!-- Grid dots -->
+            <circle cx="70" cy="70" r="3" class="bp-dot"/>
+            <circle cx="290" cy="70" r="3" class="bp-dot"/>
+            <circle cx="70" cy="240" r="3" class="bp-dot"/>
+            <circle cx="290" cy="240" r="3" class="bp-dot"/>
+            <circle cx="410" cy="100" r="3" class="bp-dot"/>
+            <circle cx="410" cy="210" r="3" class="bp-dot"/>
+
+            <!-- ===== LOT INFO ===== -->
+            <text x="25" y="16" class="bp-text-accent">Lot 14 — Block 7</text>
+            <text x="180" y="16" class="bp-text-dim">Zone: R-3 Residential</text>
+            <!-- North arrow label -->
+            <text x="444" y="52" class="bp-text-dim">N</text>
+
+            <!-- ===== TITLE BLOCK ===== -->
+            <text x="350" y="402" class="bp-text-accent">SP-001</text>
+            <text x="390" y="402" class="bp-text-dim">Architectural Site Plan</text>
+            <text x="46" y="414" class="bp-text-dim">Scale: 1:200 | Lot: 45.0 m × 33.0 m | Coverage: 34%</text>
+          </svg>
         </div>
       </div>
       <div class="split-line split-line-h"></div>
     </section>
 
-    <!-- ══════ 6. VERTICAL SPLIT — awards / elevation ══════ -->
+    <!-- ══════ 6. VERTICAL SPLIT — Awards + Elevation ══════ -->
     <section class="vsplit" data-split="vertical">
       <div class="vsplit-left">
         <div class="panel-label">
@@ -172,20 +1395,401 @@
         </div>
       </div>
       <div class="vsplit-right">
-        <div class="visual-block block-elevation">
-          <div class="elev-base"></div>
-          <div class="elev-floor elev-floor-1"></div>
-          <div class="elev-floor elev-floor-2"></div>
-          <div class="elev-floor elev-floor-3"></div>
-          <div class="elev-cantilever"></div>
-          <div class="elev-glass"></div>
-          <div class="elev-glass elev-glass-2"></div>
+        <div class="blueprint-container">
+          <svg class="blueprint" viewBox="0 0 500 420" data-blueprint>
+            <!-- ===== TERRACE OUTLINE (wraparound, dashed) ===== -->
+            <rect x="20" y="20" width="460" height="380" class="bp-line-thin" fill="none" stroke-dasharray="6 3"/>
+
+            <!-- ===== EXTERIOR WALLS (thick, 6px) ===== -->
+            <rect x="50" y="50" width="400" height="320" class="bp-line" fill="none" stroke-width="6"/>
+
+            <!-- ===== INTERIOR WALLS (4px rects) ===== -->
+            <!-- Living/Kitchen horizontal divider -->
+            <rect x="50" y="195" width="220" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master suite vertical divider -->
+            <rect x="270" y="50" width="4" height="320" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master bedroom/bath horizontal -->
+            <rect x="270" y="195" width="180" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Walk-in closet walls -->
+            <rect x="350" y="50" width="4" height="80" class="bp-line" fill="none" stroke-width="1"/>
+            <rect x="270" y="126" width="84" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Master bath partition -->
+            <rect x="354" y="126" width="4" height="73" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Guest bedroom vertical -->
+            <rect x="160" y="195" width="4" height="175" class="bp-line" fill="none" stroke-width="1"/>
+            <!-- Powder room -->
+            <rect x="160" y="280" width="110" height="4" class="bp-line" fill="none" stroke-width="1"/>
+            <rect x="160" y="280" width="4" height="50" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Laundry/utility -->
+            <rect x="160" y="326" width="110" height="4" class="bp-line" fill="none" stroke-width="0.8"/>
+
+            <!-- ===== WINDOWS (double lines) ===== -->
+            <!-- N wall: living room windows -->
+            <line x1="80" y1="48" x2="160" y2="48" class="bp-accent-line" stroke-width="2"/>
+            <line x1="80" y1="53" x2="160" y2="53" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- N wall: master bath/closet window -->
+            <line x1="380" y1="48" x2="435" y2="48" class="bp-accent-line" stroke-width="2"/>
+            <line x1="380" y1="53" x2="435" y2="53" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall: master bedroom -->
+            <line x1="448" y1="220" x2="448" y2="310" class="bp-accent-line" stroke-width="2"/>
+            <line x1="452" y1="220" x2="452" y2="310" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- E wall: master bath -->
+            <line x1="448" y1="80" x2="448" y2="140" class="bp-accent-line" stroke-width="2"/>
+            <line x1="452" y1="80" x2="452" y2="140" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: kitchen/dining -->
+            <line x1="70" y1="368" x2="145" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="70" y1="372" x2="145" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- S wall: guest bedroom -->
+            <line x1="180" y1="368" x2="250" y2="368" class="bp-accent-line" stroke-width="2"/>
+            <line x1="180" y1="372" x2="250" y2="372" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall: living -->
+            <line x1="48" y1="80" x2="48" y2="160" class="bp-accent-line" stroke-width="2"/>
+            <line x1="52" y1="80" x2="52" y2="160" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- W wall: kitchen -->
+            <line x1="48" y1="240" x2="48" y2="320" class="bp-accent-line" stroke-width="2"/>
+            <line x1="52" y1="240" x2="52" y2="320" class="bp-accent-line" stroke-width="0.5"/>
+
+            <!-- ===== SLIDING DOORS TO TERRACE ===== -->
+            <line x1="180" y1="48" x2="250" y2="48" class="bp-accent-line" stroke-width="2" stroke-dasharray="4 3"/>
+            <line x1="180" y1="53" x2="250" y2="53" class="bp-accent-line" stroke-width="0.5" stroke-dasharray="4 3"/>
+            <line x1="340" y1="368" x2="430" y2="368" class="bp-accent-line" stroke-width="2" stroke-dasharray="4 3"/>
+            <line x1="340" y1="372" x2="430" y2="372" class="bp-accent-line" stroke-width="0.5" stroke-dasharray="4 3"/>
+            <!-- E side sliding door -->
+            <line x1="448" y1="320" x2="448" y2="360" class="bp-accent-line" stroke-width="2" stroke-dasharray="4 3"/>
+            <line x1="452" y1="320" x2="452" y2="360" class="bp-accent-line" stroke-width="0.5" stroke-dasharray="4 3"/>
+
+            <!-- ===== DOOR SWINGS ===== -->
+            <!-- Master entry -->
+            <path d="M 274 140 Q 294 140 294 160" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="274" y1="140" x2="274" y2="160" class="bp-line-thin"/>
+            <!-- Walk-in closet -->
+            <path d="M 330 126 Q 330 106 310 106" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="330" y1="126" x2="310" y2="126" class="bp-line-thin"/>
+            <!-- Master bath -->
+            <path d="M 358 170 Q 378 170 378 190" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="358" y1="170" x2="358" y2="190" class="bp-line-thin"/>
+            <!-- Guest bedroom -->
+            <path d="M 164 250 Q 184 250 184 230" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="164" y1="250" x2="164" y2="230" class="bp-line-thin"/>
+            <!-- Powder room -->
+            <path d="M 200 280 Q 200 260 220 260" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="200" y1="280" x2="200" y2="260" class="bp-line-thin"/>
+            <!-- Kitchen to living -->
+            <path d="M 130 195 Q 130 175 110 175" class="bp-accent-line" fill="none" stroke-width="0.8"/>
+            <line x1="130" y1="195" x2="130" y2="175" class="bp-line-thin"/>
+
+            <!-- ===== LIVING ROOM FURNITURE ===== -->
+            <!-- Large L-shaped sectional sofa -->
+            <rect x="68" y="68" width="100" height="28" class="bp-line-thin" fill="none" rx="3"/>
+            <rect x="68" y="68" width="28" height="75" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Cushion lines -->
+            <line x1="96" y1="71" x2="96" y2="93" class="bp-line-thin"/>
+            <line x1="124" y1="71" x2="124" y2="93" class="bp-line-thin"/>
+            <line x1="148" y1="71" x2="148" y2="93" class="bp-line-thin"/>
+            <!-- Coffee table -->
+            <rect x="108" y="85" width="45" height="22" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Armchairs -->
+            <rect x="165" y="72" width="22" height="22" class="bp-line-thin" fill="none" rx="4"/>
+            <rect x="165" y="105" width="22" height="22" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Side table -->
+            <circle cx="176" cy="98" r="6" class="bp-line-thin" fill="none"/>
+            <!-- TV/media wall unit -->
+            <rect x="200" y="60" width="6" height="80" class="bp-line-thin" fill="none"/>
+            <!-- Rug -->
+            <rect x="62" y="60" width="150" height="90" class="bp-dim" fill="none" rx="3" stroke-dasharray="4 3"/>
+            <!-- Floor lamps -->
+            <circle cx="62" cy="148" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="62" cy="148" r="1.5" class="bp-dot"/>
+            <!-- Console table -->
+            <rect x="210" y="62" width="40" height="8" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== KITCHEN ===== -->
+            <!-- Counter L-shape -->
+            <rect x="58" y="205" width="12" height="110" class="bp-line" fill="none" stroke-width="0.8"/>
+            <rect x="58" y="305" width="90" height="12" class="bp-line" fill="none" stroke-width="0.8"/>
+            <!-- Stove (4 burners) -->
+            <rect x="60" y="240" width="10" height="22" class="bp-line-thin" fill="none"/>
+            <circle cx="64" cy="247" r="2.5" class="bp-line-thin" fill="none"/>
+            <circle cx="64" cy="256" r="2.5" class="bp-line-thin" fill="none"/>
+            <!-- Oven below -->
+            <rect x="60" y="262" width="10" height="14" class="bp-line-thin" fill="none"/>
+            <line x1="62" y1="266" x2="68" y2="266" class="bp-line-thin"/>
+            <line x1="62" y1="272" x2="68" y2="272" class="bp-line-thin"/>
+            <!-- Sink (double) -->
+            <rect x="60" y="215" width="10" height="18" class="bp-line-thin" fill="none" rx="3"/>
+            <line x1="60" y1="224" x2="70" y2="224" class="bp-line-thin"/>
+            <!-- Dishwasher -->
+            <rect x="60" y="280" width="10" height="16" class="bp-line-thin" fill="none"/>
+            <line x1="62" y1="284" x2="68" y2="284" class="bp-line-thin"/>
+            <line x1="62" y1="290" x2="68" y2="290" class="bp-line-thin"/>
+            <!-- Refrigerator -->
+            <rect x="58" y="342" width="28" height="22" class="bp-line" fill="none" stroke-width="0.8"/>
+            <line x1="72" y1="342" x2="72" y2="364" class="bp-line-thin"/>
+            <!-- Island -->
+            <rect x="90" y="240" width="55" height="24" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Bar stools -->
+            <circle cx="100" cy="272" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="116" cy="272" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="132" cy="272" r="5" class="bp-line-thin" fill="none"/>
+            <!-- Wine cooler -->
+            <rect x="100" y="307" width="14" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Pantry shelves -->
+            <line x1="120" y1="307" x2="145" y2="307" class="bp-line-thin"/>
+            <line x1="120" y1="313" x2="145" y2="313" class="bp-line-thin"/>
+
+            <!-- ===== DINING ===== -->
+            <rect x="80" y="338" width="65" height="26" class="bp-line-thin" fill="none" rx="10"/>
+            <!-- Chairs -->
+            <circle cx="92" cy="333" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="112" cy="333" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="132" cy="333" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="92" cy="369" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="112" cy="369" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="132" cy="369" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="76" cy="351" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="149" cy="351" r="4" class="bp-line-thin" fill="none"/>
+            <!-- Pendant light -->
+            <circle cx="112" cy="351" r="14" class="bp-dim" fill="none" stroke-dasharray="2 2"/>
+
+            <!-- ===== MASTER BEDROOM ===== -->
+            <!-- King bed -->
+            <rect x="300" y="225" width="75" height="90" class="bp-line-thin" fill="none" rx="3"/>
+            <!-- Pillows -->
+            <rect x="306" y="230" width="28" height="14" class="bp-line-thin" fill="none" rx="5"/>
+            <rect x="340" y="230" width="28" height="14" class="bp-line-thin" fill="none" rx="5"/>
+            <!-- Headboard -->
+            <line x1="300" y1="225" x2="375" y2="225" class="bp-line" stroke-width="1.5"/>
+            <!-- Nightstands -->
+            <rect x="285" y="235" width="12" height="12" class="bp-line-thin" fill="none"/>
+            <rect x="378" y="235" width="12" height="12" class="bp-line-thin" fill="none"/>
+            <!-- Table lamps -->
+            <circle cx="291" cy="241" r="3" class="bp-line-thin" fill="none"/>
+            <circle cx="384" cy="241" r="3" class="bp-line-thin" fill="none"/>
+            <!-- Dresser -->
+            <rect x="300" y="330" width="65" height="14" class="bp-line-thin" fill="none"/>
+            <!-- Chaise lounge -->
+            <rect x="400" y="260" width="18" height="45" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Rug -->
+            <rect x="290" y="218" width="90" height="105" class="bp-dim" fill="none" rx="3" stroke-dasharray="3 3"/>
+            <!-- Floor lamp -->
+            <circle cx="425" cy="255" r="4" class="bp-line-thin" fill="none"/>
+            <circle cx="425" cy="255" r="1.5" class="bp-dot"/>
+
+            <!-- ===== MASTER BATHROOM ===== -->
+            <!-- Freestanding tub -->
+            <rect x="370" y="135" width="65" height="30" class="bp-line-thin" fill="none" rx="14"/>
+            <rect x="376" y="140" width="53" height="20" class="bp-line-thin" fill="none" rx="10"/>
+            <!-- Double vanity -->
+            <rect x="278" y="135" width="65" height="14" class="bp-line" fill="none" stroke-width="0.8"/>
+            <circle cx="296" cy="142" r="5" class="bp-line-thin" fill="none"/>
+            <circle cx="326" cy="142" r="5" class="bp-line-thin" fill="none"/>
+            <!-- Mirror line above vanity -->
+            <line x1="278" y1="133" x2="343" y2="133" class="bp-accent-line" stroke-width="0.5"/>
+            <!-- Shower (large walk-in) -->
+            <rect x="370" y="170" width="65" height="28" class="bp-line-thin" fill="none"/>
+            <circle cx="400" cy="184" r="5" class="bp-line-thin" fill="none"/>
+            <line x1="370" y1="170" x2="435" y2="198" class="bp-dim"/>
+            <!-- Toilet -->
+            <rect x="280" y="170" width="16" height="22" class="bp-line-thin" fill="none" rx="5"/>
+            <circle cx="288" cy="165" r="8" class="bp-line-thin" fill="none"/>
+            <!-- Towel rails -->
+            <line x1="362" y1="172" x2="362" y2="192" class="bp-line-thin"/>
+            <line x1="364" y1="172" x2="364" y2="192" class="bp-line-thin"/>
+
+            <!-- ===== WALK-IN CLOSET ===== -->
+            <!-- Shelving units -->
+            <line x1="356" y1="56" x2="356" y2="120" class="bp-line-thin"/>
+            <line x1="400" y1="56" x2="400" y2="120" class="bp-line-thin"/>
+            <line x1="356" y1="80" x2="444" y2="80" class="bp-line-thin"/>
+            <line x1="356" y1="100" x2="444" y2="100" class="bp-line-thin"/>
+            <!-- Hanging rails (dashed) -->
+            <line x1="278" y1="60" x2="278" y2="120" class="bp-line-thin" stroke-dasharray="1 2"/>
+            <line x1="278" y1="70" x2="345" y2="70" class="bp-line-thin"/>
+            <line x1="278" y1="110" x2="345" y2="110" class="bp-line-thin"/>
+            <!-- Island/drawer unit -->
+            <rect x="300" y="82" width="30" height="20" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== GUEST BEDROOM ===== -->
+            <!-- Bed -->
+            <rect x="175" y="215" width="55" height="50" class="bp-line-thin" fill="none" rx="2"/>
+            <!-- Pillows -->
+            <rect x="180" y="219" width="20" height="10" class="bp-line-thin" fill="none" rx="4"/>
+            <rect x="205" y="219" width="20" height="10" class="bp-line-thin" fill="none" rx="4"/>
+            <!-- Headboard -->
+            <line x1="175" y1="215" x2="230" y2="215" class="bp-line" stroke-width="1.2"/>
+            <!-- Nightstand -->
+            <rect x="233" y="220" width="10" height="10" class="bp-line-thin" fill="none"/>
+            <!-- Desk -->
+            <rect x="210" y="340" width="45" height="16" class="bp-line-thin" fill="none"/>
+            <!-- Desk chair -->
+            <circle cx="232" cy="362" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Wardrobe -->
+            <rect x="175" y="205" width="55" height="8" class="bp-line-thin" fill="none"/>
+            <line x1="202" y1="205" x2="202" y2="213" class="bp-line-thin"/>
+
+            <!-- ===== POWDER ROOM ===== -->
+            <!-- Toilet -->
+            <rect x="175" y="290" width="14" height="18" class="bp-line-thin" fill="none" rx="4"/>
+            <circle cx="182" cy="286" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Vanity -->
+            <rect x="210" y="285" width="22" height="10" class="bp-line-thin" fill="none"/>
+            <circle cx="221" cy="290" r="4" class="bp-line-thin" fill="none"/>
+            <!-- Mirror -->
+            <line x1="210" y1="283" x2="232" y2="283" class="bp-accent-line" stroke-width="0.5"/>
+
+            <!-- ===== LAUNDRY ===== -->
+            <!-- Washer -->
+            <rect x="175" y="335" width="20" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <circle cx="185" cy="345" r="6" class="bp-line-thin" fill="none"/>
+            <!-- Dryer -->
+            <rect x="200" y="335" width="20" height="20" class="bp-line-thin" fill="none" rx="2"/>
+            <circle cx="210" cy="345" r="6" class="bp-line-thin" fill="none"/>
+
+            <!-- ===== TERRACE FURNITURE ===== -->
+            <!-- N terrace: outdoor lounge -->
+            <rect x="280" y="26" width="40" height="16" class="bp-dim" fill="none" rx="2" stroke-dasharray="3 2"/>
+            <rect x="330" y="26" width="40" height="16" class="bp-dim" fill="none" rx="2" stroke-dasharray="3 2"/>
+            <!-- S terrace: outdoor dining -->
+            <circle cx="390" cy="385" r="12" class="bp-dim" fill="none" stroke-dasharray="3 2"/>
+            <!-- Planter -->
+            <rect x="30" y="30" width="12" height="35" class="bp-dim" fill="none" rx="2" stroke-dasharray="2 2"/>
+            <rect x="30" y="355" width="12" height="35" class="bp-dim" fill="none" rx="2" stroke-dasharray="2 2"/>
+
+            <!-- ===== DIMENSION CHAINS — TOP ===== -->
+            <line x1="50" y1="10" x2="450" y2="10" class="bp-dim"/>
+            <line x1="50" y1="6" x2="50" y2="14" class="bp-dim"/>
+            <line x1="450" y1="6" x2="450" y2="14" class="bp-dim"/>
+            <text x="250" y="8" class="bp-text-dim" text-anchor="middle">18.00 m</text>
+            <!-- Segmented -->
+            <line x1="50" y1="40" x2="274" y2="40" class="bp-dim"/>
+            <line x1="50" y1="36" x2="50" y2="44" class="bp-dim"/>
+            <line x1="274" y1="36" x2="274" y2="44" class="bp-dim"/>
+            <text x="162" y="38" class="bp-text-dim" text-anchor="middle">9.96 m</text>
+            <line x1="274" y1="40" x2="450" y2="40" class="bp-dim"/>
+            <line x1="450" y1="36" x2="450" y2="44" class="bp-dim"/>
+            <text x="362" y="38" class="bp-text-dim" text-anchor="middle">8.04 m</text>
+
+            <!-- ===== DIMENSION CHAINS — BOTTOM ===== -->
+            <line x1="50" y1="385" x2="164" y2="385" class="bp-dim"/>
+            <line x1="50" y1="381" x2="50" y2="389" class="bp-dim"/>
+            <line x1="164" y1="381" x2="164" y2="389" class="bp-dim"/>
+            <text x="107" y="392" class="bp-text-dim" text-anchor="middle">5.04 m</text>
+            <line x1="164" y1="385" x2="274" y2="385" class="bp-dim"/>
+            <line x1="274" y1="381" x2="274" y2="389" class="bp-dim"/>
+            <text x="219" y="392" class="bp-text-dim" text-anchor="middle">4.92 m</text>
+            <line x1="274" y1="385" x2="450" y2="385" class="bp-dim"/>
+            <line x1="450" y1="381" x2="450" y2="389" class="bp-dim"/>
+            <text x="362" y="392" class="bp-text-dim" text-anchor="middle">8.04 m</text>
+            <!-- Overall bottom -->
+            <line x1="50" y1="395" x2="450" y2="395" class="bp-dim"/>
+            <line x1="50" y1="391" x2="50" y2="399" class="bp-dim"/>
+            <line x1="450" y1="391" x2="450" y2="399" class="bp-dim"/>
+            <text x="250" y="402" class="bp-text-dim" text-anchor="middle">18.00 m</text>
+
+            <!-- ===== DIMENSION CHAINS — LEFT ===== -->
+            <line x1="35" y1="50" x2="35" y2="370" class="bp-dim"/>
+            <line x1="31" y1="50" x2="39" y2="50" class="bp-dim"/>
+            <line x1="31" y1="370" x2="39" y2="370" class="bp-dim"/>
+            <text x="28" y="210" class="bp-text-dim" transform="rotate(-90, 28, 210)" text-anchor="middle">14.40 m</text>
+            <!-- Segmented left -->
+            <line x1="42" y1="50" x2="42" y2="199" class="bp-dim"/>
+            <line x1="38" y1="50" x2="46" y2="50" class="bp-dim"/>
+            <line x1="38" y1="199" x2="46" y2="199" class="bp-dim"/>
+            <text x="18" y="125" class="bp-text-dim" transform="rotate(-90, 18, 125)" text-anchor="middle">6.72 m</text>
+            <line x1="42" y1="199" x2="42" y2="370" class="bp-dim"/>
+            <line x1="38" y1="370" x2="46" y2="370" class="bp-dim"/>
+            <text x="18" y="285" class="bp-text-dim" transform="rotate(-90, 18, 285)" text-anchor="middle">7.68 m</text>
+
+            <!-- ===== DIMENSION CHAINS — RIGHT ===== -->
+            <line x1="465" y1="50" x2="465" y2="199" class="bp-dim"/>
+            <line x1="461" y1="50" x2="469" y2="50" class="bp-dim"/>
+            <line x1="461" y1="199" x2="469" y2="199" class="bp-dim"/>
+            <text x="475" y="125" class="bp-text-dim" transform="rotate(90, 475, 125)" text-anchor="middle">6.72 m</text>
+            <line x1="465" y1="199" x2="465" y2="370" class="bp-dim"/>
+            <line x1="461" y1="370" x2="469" y2="370" class="bp-dim"/>
+            <text x="475" y="285" class="bp-text-dim" transform="rotate(90, 475, 285)" text-anchor="middle">7.68 m</text>
+
+            <!-- ===== INTERIOR DIMENSIONS ===== -->
+            <!-- Living width -->
+            <line x1="56" y1="183" x2="268" y2="183" class="bp-dim"/>
+            <line x1="56" y1="180" x2="56" y2="186" class="bp-dim"/>
+            <line x1="268" y1="180" x2="268" y2="186" class="bp-dim"/>
+            <text x="162" y="180" class="bp-text-dim" text-anchor="middle">9.54 m</text>
+            <!-- Master width -->
+            <line x1="276" y1="355" x2="444" y2="355" class="bp-dim"/>
+            <line x1="276" y1="352" x2="276" y2="358" class="bp-dim"/>
+            <line x1="444" y1="352" x2="444" y2="358" class="bp-dim"/>
+            <text x="360" y="352" class="bp-text-dim" text-anchor="middle">7.56 m</text>
+            <!-- Guest width -->
+            <line x1="166" y1="364" x2="268" y2="364" class="bp-dim"/>
+            <line x1="166" y1="361" x2="166" y2="367" class="bp-dim"/>
+            <line x1="268" y1="361" x2="268" y2="367" class="bp-dim"/>
+            <text x="217" y="361" class="bp-text-dim" text-anchor="middle">4.56 m</text>
+
+            <!-- ===== ROOM LABELS ===== -->
+            <text x="120" y="105" class="bp-text">Living Room</text>
+            <text x="95" y="260" class="bp-text">Kitchen</text>
+            <text x="100" y="355" class="bp-text">Dining</text>
+            <text x="330" y="280" class="bp-text">Master Suite</text>
+            <text x="320" y="158" class="bp-text">Master Bath</text>
+            <text x="370" y="72" class="bp-text-dim">Walk-in Closet</text>
+            <text x="200" y="245" class="bp-text">Guest Bedroom</text>
+            <text x="195" y="298" class="bp-text-dim">Powder</text>
+            <text x="185" y="345" class="bp-text-dim">Laundry</text>
+
+            <!-- ===== AREA CALCULATIONS ===== -->
+            <text x="120" y="115" class="bp-text-dim">57.6 m²</text>
+            <text x="95" y="270" class="bp-text-dim">26.4 m²</text>
+            <text x="100" y="365" class="bp-text-dim">12.8 m²</text>
+            <text x="330" y="290" class="bp-text-dim">40.8 m²</text>
+            <text x="320" y="168" class="bp-text-dim">18.2 m²</text>
+            <text x="370" y="82" class="bp-text-dim">22.4 m²</text>
+            <text x="200" y="255" class="bp-text-dim">24.6 m²</text>
+
+            <!-- ===== TERRACE LABELS ===== -->
+            <text x="170" y="18" class="bp-text-accent">Terrace</text>
+            <text x="468" y="210" class="bp-text-accent" transform="rotate(90, 468, 210)">Terrace</text>
+            <text x="200" y="380" class="bp-text-accent">Terrace</text>
+            <text x="26" y="210" class="bp-text-accent" transform="rotate(-90, 26, 210)">Terrace</text>
+
+            <!-- ===== TOTAL AREAS ===== -->
+            <text x="120" y="160" class="bp-text-accent">Interior: 264.8 m²</text>
+            <text x="120" y="170" class="bp-text-dim">Terrace: 131.8 m²</text>
+
+            <!-- ===== GRID REFERENCES ===== -->
+            <text x="50" y="404" class="bp-text-grid">A</text>
+            <text x="164" y="404" class="bp-text-grid">B</text>
+            <text x="274" y="404" class="bp-text-grid">C</text>
+            <text x="450" y="404" class="bp-text-grid">D</text>
+            <text x="490" y="50" class="bp-text-grid">1</text>
+            <text x="490" y="199" class="bp-text-grid">2</text>
+            <text x="490" y="370" class="bp-text-grid">3</text>
+            <!-- Grid dots -->
+            <circle cx="50" cy="50" r="3" class="bp-dot"/>
+            <circle cx="274" cy="50" r="3" class="bp-dot"/>
+            <circle cx="450" cy="50" r="3" class="bp-dot"/>
+            <circle cx="50" cy="199" r="3" class="bp-dot"/>
+            <circle cx="274" cy="199" r="3" class="bp-dot"/>
+            <circle cx="450" cy="199" r="3" class="bp-dot"/>
+            <circle cx="50" cy="370" r="3" class="bp-dot"/>
+            <circle cx="164" cy="370" r="3" class="bp-dot"/>
+            <circle cx="274" cy="370" r="3" class="bp-dot"/>
+            <circle cx="450" cy="370" r="3" class="bp-dot"/>
+
+            <!-- ===== FLOOR LEVEL ===== -->
+            <text x="56" y="46" class="bp-text-dim">Level 42 — Elev. +148.0 m</text>
+
+            <!-- ===== TITLE BLOCK ===== -->
+            <text x="350" y="402" class="bp-text-accent">A-301</text>
+            <text x="390" y="402" class="bp-text-dim">Penthouse — Floor Plan</text>
+            <text x="46" y="414" class="bp-text-dim">Scale: 1:100 | Total: 264.8 m²</text>
+          </svg>
         </div>
       </div>
       <div class="split-line split-line-v"></div>
     </section>
 
-    <!-- ══════ 7. CONTACT (full width, dark) ══════ -->
+    <!-- ══════ 7. CONTACT ══════ -->
     <section class="contact-section">
       <div class="contact-inner">
         <div class="contact-left">
@@ -220,6 +1824,10 @@
         --stone-light: #e8e4de;
         --charcoal: #1a1a1a;
         --bronze: #8b7335;
+        --bp-stroke: rgba(139, 115, 53, 0.55);
+        --bp-accent: rgba(139, 115, 53, 0.75);
+        --bp-dim: rgba(139, 115, 53, 0.35);
+        --bp-dot: rgba(139, 115, 53, 0.55);
         --text-primary: #1a1a1a;
         --text-secondary: #6b6560;
         --text-tertiary: #9e9790;
@@ -239,7 +1847,6 @@
         -webkit-font-smoothing: antialiased;
       }
 
-      /* Paper grain */
       body::after {
         content: '';
         position: fixed;
@@ -257,43 +1864,15 @@
 
       /* ── NAV ── */
       .site-nav {
-        position: fixed;
-        top: 0; left: 0; right: 0;
-        z-index: 100;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 3.5rem;
-        mix-blend-mode: difference;
-        pointer-events: none;
+        position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 2rem 3.5rem; mix-blend-mode: difference; pointer-events: none;
       }
-
-      .nav-brand {
-        font-family: var(--font-display);
-        font-size: 1rem;
-        letter-spacing: 0.35em;
-        color: white;
-        pointer-events: auto;
-      }
-
-      .nav-meta {
-        font-size: 0.65rem;
-        font-weight: 500;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.5);
-      }
+      .nav-brand { font-family: var(--font-display); font-size: 1rem; letter-spacing: 0.35em; color: white; pointer-events: auto; }
+      .nav-meta { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
 
       /* ══ HERO ══ */
-      .hero {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
-      }
-
+      .hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
       .hero-grid-lines { position: absolute; inset: 0; pointer-events: none; }
       .hgl { position: absolute; background: var(--border); }
       .hgl-v1 { width: 1px; height: 100%; left: 50%; }
@@ -301,46 +1880,14 @@
       .hgl-v3 { width: 1px; height: 60%; right: 25%; top: 20%; }
       .hgl-h1 { height: 1px; width: 100%; top: 50%; }
       .hgl-h2 { height: 1px; width: 60%; top: 35%; left: 20%; }
-
       .hero-content { text-align: center; position: relative; z-index: 2; }
-
-      .hero-eyebrow {
-        font-size: 0.68rem; font-weight: 500; letter-spacing: 0.3em;
-        text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 1.5rem;
-      }
-
-      .hero-title {
-        font-family: var(--font-display);
-        font-size: clamp(5rem, 15vw, 14rem);
-        font-weight: 400; letter-spacing: 0.12em; line-height: 0.85;
-      }
-
-      .hero-sub {
-        font-family: var(--font-display);
-        font-size: clamp(0.9rem, 1.8vw, 1.3rem);
-        font-style: italic; color: var(--text-secondary); margin-top: 1.5rem;
-      }
-
-      .hero-scroll-cue {
-        margin-top: 4rem; display: flex; flex-direction: column;
-        align-items: center; gap: 0.75rem;
-      }
-
-      .hero-scroll-cue span {
-        font-size: 0.6rem; letter-spacing: 0.25em;
-        text-transform: uppercase; color: var(--text-tertiary);
-      }
-
-      .scroll-bar {
-        width: 1px; height: 50px; background: var(--stone);
-        position: relative; overflow: hidden;
-      }
-
-      .scroll-bar-fill {
-        width: 100%; height: 100%; background: var(--bronze);
-        animation: scroll-fill 2s ease-in-out infinite;
-      }
-
+      .hero-eyebrow { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 1.5rem; }
+      .hero-title { font-family: var(--font-display); font-size: clamp(5rem, 15vw, 14rem); font-weight: 400; letter-spacing: 0.12em; line-height: 0.85; }
+      .hero-sub { font-family: var(--font-display); font-size: clamp(0.9rem, 1.8vw, 1.3rem); font-style: italic; color: var(--text-secondary); margin-top: 1.5rem; }
+      .hero-scroll-cue { margin-top: 4rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+      .hero-scroll-cue span { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-tertiary); }
+      .scroll-bar { width: 1px; height: 50px; background: var(--stone); position: relative; overflow: hidden; }
+      .scroll-bar-fill { width: 100%; height: 100%; background: var(--bronze); animation: scroll-fill 2s ease-in-out infinite; }
       @keyframes scroll-fill {
         0% { transform: scaleY(0); transform-origin: top; }
         45% { transform: scaleY(1); transform-origin: top; }
@@ -348,183 +1895,169 @@
         100% { transform: scaleY(0); transform-origin: bottom; }
       }
 
-      /* ══════════════════════════════════════ */
-      /* VERTICAL SPLITS                       */
-      /* ══════════════════════════════════════ */
-      .vsplit {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        min-height: 100vh;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .vsplit-left, .vsplit-right {
-        padding: 8vh 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 100vh;
-        will-change: transform;
-      }
-
+      /* ══ SPLITS ══ */
+      .vsplit { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; position: relative; overflow: hidden; }
+      .vsplit-left, .vsplit-right { padding: 8vh 5vw; display: flex; flex-direction: column; justify-content: center; min-height: 100vh; will-change: transform; }
       .vsplit-left { background: var(--cream); }
       .vsplit-right { background: var(--stone-light); }
-
       .vsplit-reversed .vsplit-left { background: var(--stone-light); }
       .vsplit-reversed .vsplit-right { background: var(--cream); }
 
-      /* ══════════════════════════════════════ */
-      /* HORIZONTAL SPLITS                     */
-      /* ══════════════════════════════════════ */
-      .hsplit {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        min-height: 100vh;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hsplit-top, .hsplit-bottom {
-        padding: 6vh 8vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 50vh;
-        will-change: transform;
-      }
-
+      .hsplit { display: grid; grid-template-rows: 1fr 1fr; min-height: 100vh; position: relative; overflow: hidden; }
+      .hsplit-top, .hsplit-bottom { padding: 6vh 8vw; display: flex; flex-direction: column; justify-content: center; min-height: 50vh; will-change: transform; }
       .hsplit-top { background: var(--stone-light); }
       .hsplit-bottom { background: var(--cream); }
-
       .hsplit-reversed .hsplit-top { background: var(--cream); }
       .hsplit-reversed .hsplit-bottom { background: var(--stone-light); }
 
-      /* ── SPLIT LINES ── */
-      .split-line {
-        position: absolute;
-        z-index: 5;
-        pointer-events: none;
-      }
+      .split-line { position: absolute; z-index: 5; pointer-events: none; }
+      .split-line-v { top: 0; bottom: 0; left: 50%; width: 1px; background: linear-gradient(to bottom, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent); }
+      .split-line-h { left: 0; right: 0; top: 50%; height: 1px; background: linear-gradient(to right, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent); }
 
-      .split-line-v {
-        top: 0; bottom: 0; left: 50%;
-        width: 1px;
-        background: linear-gradient(to bottom, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
-      }
-
-      .split-line-h {
-        left: 0; right: 0; top: 50%;
-        height: 1px;
-        background: linear-gradient(to right, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
-      }
-
-      /* ══════════════════════════════════════ */
-      /* SHARED PANEL STYLES                   */
-      /* ══════════════════════════════════════ */
-      .panel-label {
-        display: flex; align-items: center; gap: 1rem;
-        font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em;
-        text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 2.5rem;
-      }
-
+      /* ══ PANEL STYLES ══ */
+      .panel-label { display: flex; align-items: center; gap: 1rem; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 2.5rem; }
       .label-num { font-family: var(--font-display); font-size: 0.8rem; color: var(--bronze); }
       .label-line { width: 35px; height: 1px; background: var(--stone); }
+      .panel-quote { font-family: var(--font-display); font-size: clamp(1.3rem, 2.2vw, 2rem); font-style: italic; line-height: 1.5; margin-bottom: 1.5rem; max-width: 440px; }
+      .panel-heading { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 400; line-height: 1.05; margin-bottom: 1.5rem; }
+      .panel-body { font-size: 0.88rem; line-height: 1.8; color: var(--text-secondary); font-weight: 300; max-width: 400px; }
 
-      .panel-quote {
-        font-family: var(--font-display);
-        font-size: clamp(1.3rem, 2.2vw, 2rem);
-        font-style: italic; line-height: 1.5; margin-bottom: 1.5rem; max-width: 440px;
-      }
-
-      .panel-heading {
-        font-family: var(--font-display);
-        font-size: clamp(2.5rem, 5vw, 4.5rem);
-        font-weight: 400; line-height: 1.05; margin-bottom: 1.5rem;
-      }
-
-      .panel-body {
-        font-size: 0.88rem; line-height: 1.8; color: var(--text-secondary);
-        font-weight: 300; max-width: 400px;
-      }
-
-      /* ── VISUAL BLOCKS ── */
-      .visual-block {
-        width: 100%; max-width: 380px; aspect-ratio: 4/3;
-        position: relative; margin: 0 auto;
-      }
-
-      /* Facade */
-      .block-facade {
-        border: 1px solid var(--border-strong);
-        display: grid; grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr); gap: 12px; padding: 24px;
-      }
-      .facade-window {
-        border: 1px solid rgba(26,26,26,0.1);
-        background: linear-gradient(135deg, rgba(212,205,196,0.3), rgba(212,205,196,0.1));
+      /* ══════════════════════════════════════ */
+      /* BLUEPRINT SVGs                        */
+      /* ══════════════════════════════════════ */
+      .blueprint-container {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        background: transparent;
+        padding: 1rem;
         position: relative;
+        overflow: visible;
       }
-      .facade-window::after {
-        content: ''; position: absolute; width: 50%; height: 1px;
-        background: var(--border); bottom: 30%; left: 25%;
+
+      .blueprint-container::before {
+        content: '';
+        position: absolute;
+        inset: -40px;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(139, 115, 53, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(139, 115, 53, 0.06) 1px, transparent 1px);
+        background-size: 40px 40px;
+        mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
       }
-      .facade-beam { position: absolute; left: 0; right: 0; height: 3px; background: rgba(26,26,26,0.06); top: 50%; }
-      .facade-beam-2 { top: auto; bottom: 0; height: 6px; background: rgba(26,26,26,0.08); }
 
-      /* Section */
-      .block-section { border-bottom: 2px solid rgba(26,26,26,0.15); }
-      .section-floor { position: absolute; left: 10%; right: 10%; height: 1px; background: rgba(26,26,26,0.12); }
-      .section-floor-1 { bottom: 25%; } .section-floor-2 { bottom: 50%; } .section-floor-3 { bottom: 75%; }
-      .section-col { position: absolute; bottom: 0; width: 4px; height: 90%; background: rgba(26,26,26,0.08); }
-      .section-col-1 { left: 30%; } .section-col-2 { right: 30%; }
-      .section-roof { position: absolute; top: 5%; left: 5%; right: 5%; height: 3px; background: rgba(139,115,53,0.15); }
+      .blueprint-container::after {
+        content: '';
+        position: absolute;
+        inset: -40px;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(139, 115, 53, 0.025) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(139, 115, 53, 0.025) 1px, transparent 1px);
+        background-size: 10px 10px;
+        mask-image: radial-gradient(ellipse at center, black 25%, transparent 70%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 70%);
+      }
 
-      /* Plan */
-      .block-plan { border: 2px solid rgba(26,26,26,0.1); }
-      .plan-room { position: absolute; border: 1px solid rgba(26,26,26,0.08); }
-      .plan-room-1 { top: 8%; left: 8%; width: 45%; height: 55%; }
-      .plan-room-2 { top: 8%; right: 8%; width: 35%; height: 40%; }
-      .plan-room-3 { bottom: 8%; left: 8%; width: 84%; height: 30%; border-color: rgba(139,115,53,0.12); }
-      .plan-wall { position: absolute; background: rgba(26,26,26,0.1); }
-      .plan-wall-1 { left: 53%; top: 8%; width: 2px; height: 55%; }
-      .plan-wall-2 { top: 63%; left: 8%; width: 84%; height: 2px; }
-      .plan-wall-3 { top: 48%; right: 8%; width: 35%; height: 2px; }
-      .plan-door { position: absolute; bottom: 28%; left: 30%; width: 18px; height: 4px; background: var(--cream); border-bottom: 1px dashed rgba(139,115,53,0.2); }
+      .blueprint {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
 
-      /* Elevation */
-      .block-elevation { border-bottom: 2px solid rgba(26,26,26,0.12); }
-      .elev-base { position: absolute; bottom: 0; left: 15%; right: 15%; height: 8px; background: rgba(26,26,26,0.06); }
-      .elev-floor { position: absolute; left: 15%; right: 15%; height: 1px; background: rgba(26,26,26,0.1); }
-      .elev-floor-1 { bottom: 25%; } .elev-floor-2 { bottom: 50%; } .elev-floor-3 { bottom: 75%; right: 25%; }
-      .elev-cantilever { position: absolute; bottom: 50%; right: 10%; width: 20%; height: 25%; border: 1px solid rgba(26,26,26,0.08); border-bottom: 2px solid rgba(139,115,53,0.12); }
-      .elev-glass { position: absolute; bottom: 26%; left: 20%; width: 25%; height: 22%; background: linear-gradient(180deg, rgba(212,205,196,0.2), rgba(212,205,196,0.05)); border: 1px solid rgba(26,26,26,0.05); }
-      .elev-glass-2 { left: 50%; width: 18%; }
+      .bp-line {
+        stroke: var(--bp-stroke);
+        stroke-width: 0.8;
+      }
 
-      /* Detail */
-      .block-detail { border: 1px dashed rgba(26,26,26,0.08); }
-      .detail-beam { position: absolute; top: 40%; left: 10%; right: 10%; height: 12px; border: 1px solid rgba(26,26,26,0.1); background: rgba(212,205,196,0.15); }
-      .detail-beam-2 { top: auto; bottom: 35%; left: 25%; right: 25%; height: 8px; transform: rotate(-2deg); }
-      .detail-joint { position: absolute; top: 38%; left: 45%; width: 20px; height: 20px; border: 2px solid rgba(139,115,53,0.2); border-radius: 50%; }
-      .detail-bolt { position: absolute; top: 43%; left: 25%; width: 6px; height: 6px; background: rgba(26,26,26,0.15); border-radius: 50%; }
-      .detail-bolt-2 { left: auto; right: 25%; }
-      .detail-line { position: absolute; background: rgba(139,115,53,0.1); }
-      .detail-line-1 { top: 20%; left: 30%; width: 1px; height: 15%; }
-      .detail-line-2 { bottom: 20%; right: 30%; width: 15%; height: 1px; }
-      .detail-dimension { position: absolute; bottom: 15%; left: 20%; right: 20%; height: 1px; background: rgba(139,115,53,0.15); }
-      .detail-dimension::before, .detail-dimension::after { content: ''; position: absolute; width: 1px; height: 8px; background: rgba(139,115,53,0.15); top: -4px; }
-      .detail-dimension::before { left: 0; } .detail-dimension::after { right: 0; }
+      .bp-line-thin {
+        stroke: var(--bp-stroke);
+        stroke-width: 0.5;
+        fill: none;
+        opacity: 0.5;
+      }
 
-      /* ── AWARDS ── */
+      .bp-accent {
+        stroke: var(--bp-accent) !important;
+      }
+
+      .bp-accent-line {
+        stroke: var(--bp-accent);
+        stroke-width: 0.8;
+        fill: none;
+      }
+
+      .bp-dim {
+        stroke: var(--bp-dim);
+        stroke-width: 0.5;
+      }
+
+      .bp-dot {
+        fill: var(--bp-dot);
+        stroke: none;
+      }
+
+      /* All drawable SVG elements start hidden */
+      [data-blueprint] line,
+      [data-blueprint] rect,
+      [data-blueprint] path,
+      [data-blueprint] circle {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+      }
+
+      [data-blueprint] .bp-dot {
+        stroke-dasharray: none;
+        stroke-dashoffset: 0;
+        opacity: 0;
+      }
+
+      .bp-text {
+        font-family: var(--font-body);
+        fill: var(--bp-stroke);
+        font-size: 7px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0;
+      }
+
+      .bp-text-dim {
+        font-family: var(--font-body);
+        fill: var(--bp-stroke);
+        font-size: 6.5px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        opacity: 0;
+      }
+
+      .bp-text-accent {
+        font-family: var(--font-body);
+        fill: var(--bp-accent);
+        font-size: 6px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        opacity: 0;
+      }
+
+      .bp-text-grid {
+        font-family: var(--font-display);
+        fill: var(--bp-dot);
+        font-size: 8px;
+        font-weight: 400;
+        text-anchor: middle;
+        opacity: 0;
+      }
+
+      /* ══ AWARDS ══ */
       .awards-compact { display: flex; flex-direction: column; }
-      .award-line {
-        padding: 0.9rem 0; border-bottom: 1px solid var(--border);
-        font-size: 0.85rem; display: flex; align-items: baseline; gap: 1.5rem;
-      }
+      .award-line { padding: 0.9rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; display: flex; align-items: baseline; gap: 1.5rem; }
       .award-line:first-child { border-top: 1px solid var(--border); }
       .award-yr { font-family: var(--font-display); font-size: 0.8rem; color: var(--bronze); flex-shrink: 0; width: 40px; }
 
-      /* ── PROCESS ── */
+      /* ══ PROCESS ══ */
       .process-list { display: flex; flex-direction: column; gap: 2.5rem; }
       .process-item { display: flex; gap: 1.5rem; align-items: flex-start; }
       .process-num { font-family: var(--font-display); font-size: 1.5rem; color: var(--bronze); opacity: 0.4; line-height: 1; flex-shrink: 0; padding-top: 0.15rem; }
@@ -552,6 +2085,7 @@
         .split-line-v { display: none; }
         .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
         .contact-section { padding: 5rem 2rem; }
+        .blueprint-container { max-width: 90vw; }
       }
     </style>
 
@@ -562,14 +2096,13 @@
 
       gsap.registerPlugin(ScrollTrigger);
 
-      // ── LENIS — extra smooth ──
+      // ── LENIS ──
       const lenis = new Lenis({
         duration: 1.8,
         easing: (t: number) => 1 - Math.pow(1 - t, 4),
         smoothWheel: true,
         touchMultiplier: 1.5,
       });
-
       lenis.on('scroll', ScrollTrigger.update);
       gsap.ticker.add((time: number) => { lenis.raf(time * 1000); });
       gsap.ticker.lagSmoothing(0);
@@ -579,7 +2112,6 @@
         y: -60, opacity: 0,
         scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 2 },
       });
-
       gsap.to('.hero-grid-lines', {
         y: -30, opacity: 0,
         scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 2 },
@@ -590,29 +2122,17 @@
         const left = section.querySelector('.vsplit-left') as HTMLElement;
         const right = section.querySelector('.vsplit-right') as HTMLElement;
         const isReversed = section.classList.contains('vsplit-reversed');
-
         if (!left || !right) return;
-
         const distance = 120;
 
-        // One side slides up, the other slides down
         gsap.fromTo(isReversed ? right : left,
-          { y: distance },
-          {
-            y: -distance * 0.3,
-            ease: 'none',
+          { y: distance }, { y: -distance * 0.3, ease: 'none',
             scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 2 },
-          }
-        );
-
+        });
         gsap.fromTo(isReversed ? left : right,
-          { y: -distance },
-          {
-            y: distance * 0.3,
-            ease: 'none',
+          { y: -distance }, { y: distance * 0.3, ease: 'none',
             scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 2 },
-          }
-        );
+        });
       });
 
       // ── HORIZONTAL SPLITS ──
@@ -620,45 +2140,68 @@
         const top = section.querySelector('.hsplit-top') as HTMLElement;
         const bottom = section.querySelector('.hsplit-bottom') as HTMLElement;
         const isReversed = section.classList.contains('hsplit-reversed');
-
         if (!top || !bottom) return;
-
         const distance = 100;
 
-        // One side slides left, the other slides right
         gsap.fromTo(isReversed ? bottom : top,
-          { x: distance },
-          {
-            x: -distance * 0.3,
-            ease: 'none',
+          { x: distance }, { x: -distance * 0.3, ease: 'none',
             scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 2 },
-          }
-        );
-
+        });
         gsap.fromTo(isReversed ? top : bottom,
-          { x: -distance },
-          {
-            x: distance * 0.3,
-            ease: 'none',
+          { x: -distance }, { x: distance * 0.3, ease: 'none',
             scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 2 },
-          }
-        );
+        });
+      });
+
+      // ── BLUEPRINT LINE-DRAWING ANIMATION ──
+      document.querySelectorAll('[data-blueprint]').forEach((svg) => {
+        const drawables = svg.querySelectorAll('line, rect, path, circle');
+        const dots = svg.querySelectorAll('.bp-dot');
+
+        drawables.forEach((el, i) => {
+          const elem = el as SVGGeometryElement;
+          if (elem.classList.contains('bp-dot')) return;
+
+          // Calculate actual path length
+          let length = 2000;
+          try { length = elem.getTotalLength(); } catch(e) { /* fallback */ }
+
+          gsap.set(elem, { strokeDasharray: length, strokeDashoffset: length });
+
+          gsap.to(elem, {
+            strokeDashoffset: 0,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: svg.closest('.blueprint-container'),
+              start: 'top 85%',
+              end: 'top 25%',
+              scrub: 1.5,
+            },
+            delay: i * 0.02,
+          });
+        });
+
+        // Fade in dots and text
+        const fadeEls = svg.querySelectorAll('.bp-dot, .bp-text, .bp-text-dim, .bp-text-accent, .bp-text-grid');
+        fadeEls.forEach((el, i) => {
+          gsap.to(el, {
+            opacity: el.classList.contains('bp-dot') ? 1 : el.classList.contains('bp-text-dim') ? 0.8 : 1,
+            duration: 0.4,
+            scrollTrigger: {
+              trigger: svg.closest('.blueprint-container'),
+              start: 'top 40%',
+              toggleActions: 'play none none none',
+            },
+            delay: i * 0.06,
+          });
+        });
       });
 
       // ── CONTENT REVEALS ──
-      const revealEls = document.querySelectorAll('.panel-label, .panel-quote, .panel-heading, .panel-body, .award-line, .process-item, .visual-block, .contact-headline, .contact-block');
-
-      revealEls.forEach((el, i) => {
+      document.querySelectorAll('.panel-label, .panel-quote, .panel-heading, .panel-body, .award-line, .process-item, .contact-headline, .contact-block').forEach((el) => {
         gsap.from(el, {
-          opacity: 0,
-          y: 25,
-          duration: 0.9,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 88%',
-            toggleActions: 'play none none none',
-          },
+          opacity: 0, y: 25, duration: 0.9, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
         });
       });
     </script>
